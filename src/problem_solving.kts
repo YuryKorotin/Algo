@@ -11,9 +11,30 @@ class Solution{
         @JvmStatic fun main(args: Array<String>) {
             solveProblem()
         }
+
+        fun checkSolution(fileName: String) {
+            var result = "SUCCESS"
+            val expectedResults = readFromFile(fileName)
+            val myResults = readFromFile("output.txt")
+
+            for (i in 0 until expectedResults.size) {
+                val expected = expectedResults.get(i)
+                val myResult = myResults.get(i)
+                if (!expected.equals(myResult)) {
+                    println("FAILED %i variant".format(i))
+
+                    println("Expected to be %s, but was %s".format(expected, myResult))
+
+                    result = "FAILED"
+                }
+            }
+
+            println(result)
+        }
+
         fun solveProblem() {
             //val result = isBalanced(s)
-            val input = readFromFile()
+            val input = readFromFile("input.txt")
             var output = mutableListOf<String>()
 
             val solution = BalancedBracketsSolution()
@@ -44,8 +65,8 @@ class Solution{
 
         }
 
-        fun readFromFile() : List<String> {
-            val bufferedReader = File("input.txt").bufferedReader()
+        fun readFromFile(fileName: String) : List<String> {
+            val bufferedReader = File(fileName).bufferedReader()
 
             val lineList = mutableListOf<String>()
 
@@ -73,3 +94,4 @@ class Solution{
 }
 
 Solution.solveProblem()
+Solution.checkSolution("expected.txt")
