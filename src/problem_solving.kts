@@ -4,12 +4,13 @@ import java.util.*
 import java.io.File
 import java.io.BufferedReader
 
-//INCLUDE balanced_brackets.kt
+//INCLUDE BalancedBrackets.kt
+//INCLUDE TalesOfTwoStacks.kt
 
 class Solution{
     companion object {
         @JvmStatic fun main(args: Array<String>) {
-            solveProblem()
+            //solveProblem()
         }
 
         fun checkSolution(fileName: String) {
@@ -32,12 +33,12 @@ class Solution{
             println(result)
         }
 
-        fun solveProblem() {
+        fun solveBracketsProblem() {
             //val result = isBalanced(s)
             val input = readFromFile("input.txt")
             var output = mutableListOf<String>()
 
-            val solution = BalancedBracketsSolution()
+            val solution = BalancedBrackets()
 
             for (i in 1 until input.size) {
                 output.add(solution.isBalanced(input.get(i)))
@@ -46,7 +47,19 @@ class Solution{
             writeToFile(output)
         }
 
-        fun readFromConsole() {
+
+        fun solveQueueProblem() {
+            //val result = isBalanced(s)
+            val input = readFromFile("input.txt")
+
+            val solution = TalesOfTwoStacks()
+
+            val output = solution.changeQueue(input.subList(1, input.size))
+
+            writeToFile(output)
+        }
+
+        fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
 
             val scan = Scanner(System.`in`)
@@ -63,6 +76,7 @@ class Solution{
                 println(">  " + s)
             }
 
+            return lineList
         }
 
         fun readFromFile(fileName: String) : List<String> {
@@ -93,5 +107,5 @@ class Solution{
     }
 }
 
-Solution.solveProblem()
-Solution.checkSolution("expected.txt")
+Solution.solveQueueProblem()
+//Solution.checkSolution("expected.txt")

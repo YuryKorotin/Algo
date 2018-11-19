@@ -1,6 +1,6 @@
 package solution
 
-open class BalancedBracketsSolution() {
+open class BalancedBrackets() {
     fun isBalanced(s: String): String {
         var brackets = ""
         val leftBrackets = "{(["
