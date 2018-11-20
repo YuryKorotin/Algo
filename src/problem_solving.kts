@@ -6,6 +6,7 @@ import java.io.BufferedReader
 
 //INCLUDE BalancedBrackets.kt
 //INCLUDE TalesOfTwoStacks.kt
+//INCLUDE DavisStaircase.kt
 
 class Solution{
     companion object {
@@ -59,6 +60,17 @@ class Solution{
             writeToFile(output)
         }
 
+        fun solveDavisProblem() {
+            val input = readFromFile("input.txt")
+
+            val solution = DavisStaircase()
+
+            val output = solution.calculate(input.subList(1, input.size))
+
+            writeToFile(output)
+        }
+
+
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
 
@@ -107,5 +119,5 @@ class Solution{
     }
 }
 
-Solution.solveQueueProblem()
-//Solution.checkSolution("expected.txt")
+Solution.solveDavisProblem()
+Solution.checkSolution("expected.txt")
