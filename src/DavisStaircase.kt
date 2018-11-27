@@ -3,10 +3,6 @@ package solution
 import javax.swing.UIManager.put
 import java.util.HashMap
 
-
-
-
-
 open class DavisStaircase {
 
     fun stepPerms(n: Int, cache: HashMap<Int, Int>): Int {

@@ -7,6 +7,7 @@ import java.io.BufferedReader
 //INCLUDE BalancedBrackets.kt
 //INCLUDE TalesOfTwoStacks.kt
 //INCLUDE DavisStaircase.kt
+//INCLUDE CircleQueries.kt
 
 class Solution{
     companion object {
@@ -70,6 +71,16 @@ class Solution{
             writeToFile(output)
         }
 
+        fun solveCircleProblem() {
+            val input = readFromFile("input.txt")
+
+            val solution = CircleQueries()
+
+            val output = solution.calculate(input.subList(1, input.size))
+
+            writeToFile(output)
+        }
+
 
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
@@ -119,5 +130,5 @@ class Solution{
     }
 }
 
-Solution.solveDavisProblem()
-Solution.checkSolution("expected.txt")
+Solution.solveCircleProblem()
+//Solution.checkSolution("expected.txt")
