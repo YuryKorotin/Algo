@@ -11,7 +11,6 @@ open class CircleQueries {
         for (i in 0 until queries.size) {
             uf.union(queries[i][0], queries[i][1])
             result[i] = uf.max
-            System.out.println("max is " + uf.max)
         }
 
         return result

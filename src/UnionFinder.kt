@@ -42,11 +42,9 @@ open class UnionFinder {
     open fun find(v : Int) : Int {
         var result = v
 
-        while (parents.get(v) != v) {
-            parents.put(v, parents.get(parents.get(v)!!)!!)
-            result = parents.get(v)!!
-
-            System.out.println(result)
+        while (parents.get(result) != result) {
+            parents.put(result, parents.get(parents.get(v)!!)!!)
+            result = parents.get(result)!!
         }
         return result
     }
