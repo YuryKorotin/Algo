@@ -8,6 +8,7 @@ import java.io.BufferedReader
 //INCLUDE TalesOfTwoStacks.kt
 //INCLUDE DavisStaircase.kt
 //INCLUDE CircleQueries.kt
+//INCLUDE FraudulentActivity.kt
 
 class Solution{
     companion object {
@@ -24,7 +25,7 @@ class Solution{
                 val expected = expectedResults.get(i)
                 val myResult = myResults.get(i)
                 if (!expected.equals(myResult)) {
-                    println("FAILED %i variant".format(i))
+                    println("FAILED %d variant".format(i))
 
                     println("Expected to be %s, but was %s".format(expected, myResult))
 
@@ -81,6 +82,24 @@ class Solution{
             writeToFile(output)
         }
 
+        fun solveFraudulentProblem() {
+            val input = readFromFile("input.txt")
+
+            val solution = FraudulentActivity()
+
+            val statistics = input.get(1).split(" ")
+
+            val d = input.get(0).split(" ").get(1).toInt()
+
+            val convertedList : List<Int> = statistics.map { it.toInt() }
+
+            val output = solution.activityNotifications(convertedList.toTypedArray(), d)
+
+            val listOfOutput = listOf(output.toString())
+
+            writeToFile(listOfOutput)
+        }
+
 
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
@@ -130,5 +149,5 @@ class Solution{
     }
 }
 
-Solution.solveCircleProblem()
+Solution.solveFraudulentProblem()
 //Solution.checkSolution("expected.txt")
