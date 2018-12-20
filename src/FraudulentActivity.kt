@@ -8,12 +8,14 @@ open class FraudulentActivity {
         var sliced = expenditure.slice(0..d - 1).sorted().toMutableList()
 
         var mediana = 0
+        val isOdd = d % 2 != 0
+        val halfSize = d / 2
 
         for(i in d until endOfRange) {
-            if (d % 2 != 0) {
-                mediana = sliced.get(d / 2) * 2
+            if (isOdd) {
+                mediana = sliced.get(halfSize) * 2
             } else {
-                mediana = sliced.get(d / 2) + sliced.get(d / 2 - 1)
+                mediana = sliced.get(halfSize) + sliced.get(halfSize - 1)
             }
 
             if (expenditure[i] >= mediana) {
@@ -24,9 +26,13 @@ open class FraudulentActivity {
 
             val newItem = expenditure[i]
             val sliceSize =  sliced.size
-
-            if (newItem > sliced.get(sliceSize - 1)) {
+            if (newItem >= sliced.get(sliceSize - 1)) {
                 sliced.add(newItem)
+                continue
+            }
+
+            if (newItem <= sliced.get(0)) {
+                sliced.add(0, newItem)
                 continue
             }
 
@@ -42,10 +48,7 @@ open class FraudulentActivity {
         return numberOfNotifications
     }
 
-    fun findBestIndex(item: Int,
-                      list: MutableList<Int>,
-                      startPosition: Int,
-                      endPosition: Int) : Int{
+    fun findBestIndex(item: Int, list: MutableList<Int>, startPosition: Int, endPosition: Int) : Int{
         val rangeSize = (endPosition - startPosition) / 2
 
         if (item == list.get(startPosition)) {
