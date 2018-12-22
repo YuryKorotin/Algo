@@ -1,5 +1,7 @@
 package solution
 
+//INCLUDE algorithms/QuickSelect.kt
+
 open class FraudulentActivity {
     fun activityNotifications(expenditure: Array<Int>, d: Int): Int {
         val endOfRange = expenditure.size
@@ -43,6 +45,36 @@ open class FraudulentActivity {
                             0,
                             sliceSize - 1),
                     newItem)
+        }
+
+        return numberOfNotifications
+    }
+
+    fun activityNotificationsWithoutSort(expenditure: Array<Int>, d: Int): Int {
+        val endOfRange = expenditure.size
+        var numberOfNotifications = 0
+
+        val select = QuickSelect()
+        val target = expenditure.toIntArray()
+
+
+        var mediana = 0
+        val isOdd = d % 2 != 0
+        val halfSize = d / 2
+
+        for(i in d until endOfRange) {
+            if (isOdd) {
+                mediana = select.quickSelect(target, i - d, i, i - halfSize - 1) * 2
+            } else {
+                mediana = select.quickSelect(target, i - d, i, i - halfSize)
+                val prev = select.quickSelect(target, i - d, i - 1, i - halfSize - 1)
+
+                mediana = mediana + prev
+            }
+
+            if (expenditure[i] >= mediana) {
+                numberOfNotifications += 1
+            }
         }
 
         return numberOfNotifications

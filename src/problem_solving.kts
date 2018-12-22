@@ -4,6 +4,7 @@ import java.util.*
 import java.io.File
 import java.io.BufferedReader
 
+
 //INCLUDE BalancedBrackets.kt
 //INCLUDE TalesOfTwoStacks.kt
 //INCLUDE DavisStaircase.kt
@@ -93,7 +94,7 @@ class Solution{
 
             val convertedList : List<Int> = statistics.map { it.toInt() }
 
-            val output = solution.activityNotifications(convertedList.toTypedArray(), d)
+            val output = solution.activityNotificationsWithoutSort(convertedList.toTypedArray(), d)
 
             val listOfOutput = listOf(output.toString())
 
