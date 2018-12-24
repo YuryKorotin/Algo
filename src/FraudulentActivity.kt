@@ -1,6 +1,7 @@
 package solution
 
 //INCLUDE algorithms/QuickSelect.kt
+//INCLUDE algorithms/CountingSort.kt
 
 open class FraudulentActivity {
     fun activityNotifications(expenditure: Array<Int>, d: Int): Int {
@@ -45,6 +46,36 @@ open class FraudulentActivity {
                             0,
                             sliceSize - 1),
                     newItem)
+        }
+
+        return numberOfNotifications
+    }
+
+    fun activityNotificationsCountSort(expenditure: Array<Int>, d: Int): Int {
+        val endOfRange = expenditure.size
+        var numberOfNotifications = 0
+
+        val sorter = CountingSort(200)
+        var sliced : Array<Int> = expenditure.slice(0..d - 1).toTypedArray()
+        sliced = sorter.sort(sliced)
+
+        var mediana = 0
+        val isOdd = d % 2 != 0
+        val halfSize = d / 2
+
+        for(i in d until endOfRange) {
+            if (isOdd) {
+                mediana = sliced[halfSize] * 2
+            } else {
+                mediana = sliced[halfSize] + sliced[halfSize - 1]
+            }
+
+            if (expenditure[i] >= mediana) {
+                numberOfNotifications += 1
+            }
+
+            sliced = expenditure.slice(i - d + 1..i).toTypedArray()
+            sliced = sorter.sort(sliced)
         }
 
         return numberOfNotifications

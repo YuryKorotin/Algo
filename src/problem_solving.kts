@@ -94,7 +94,7 @@ class Solution{
 
             val convertedList : List<Int> = statistics.map { it.toInt() }
 
-            val output = solution.activityNotificationsWithoutSort(convertedList.toTypedArray(), d)
+            val output = solution.activityNotificationsCountSort(convertedList.toTypedArray(), d)
 
             val listOfOutput = listOf(output.toString())
 
