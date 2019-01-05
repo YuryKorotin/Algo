@@ -7,7 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/TalesOfTwoStacks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalesOfTwoStacks.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountingInversions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountingInversions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/MergeSort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/MergeSort.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,38 +22,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TalesOfTwoStacks.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TalesOfTwoStacks.kt">
+      <file leaf-file-name="problem_solving.kts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="228">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="e#18#86#0" expanded="true" />
+                <element signature="e#411#1024#0" />
+                <element signature="e#1061#1413#0" />
+                <element signature="e#1448#1707#0" />
+                <element signature="e#1741#1955#0" />
+                <element signature="e#1990#2203#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/output.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="QueueOnList.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/QueueOnList.kt">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/QueueOnList.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="171">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input(fraudulent).txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input(fraudulent).txt">
+      <file leaf-file-name="CountingInversions.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CountingInversions.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="1000" column="19" selection-start-line="1000" selection-start-column="19" selection-end-line="1000" selection-end-column="19" />
+            <state relative-caret-position="266">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MergeSort.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="input(queue).txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input(queue).txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSort.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algorithms/MergeSort.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="311">
+              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -57,47 +96,8 @@
       <file leaf-file-name="FraudulentActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FraudulentActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1240">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuickSelect.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/QuickSelect.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnionFinder.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UnionFinder.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="expected.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/expected.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="999" column="3" selection-start-line="999" selection-start-column="3" selection-end-line="999" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DavisStaircase.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DavisStaircase.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-              <folding>
-                <element signature="e#18#75#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-194">
+              <caret line="3" column="19" selection-start-line="3" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -105,8 +105,17 @@
       <file leaf-file-name="CountingSort.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithms/CountingSort.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="203">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickSelect.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/algorithms/QuickSelect.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -127,6 +136,7 @@
       <find>countsMap.put</find>
       <find>countsMap</find>
       <find>traceCounts</find>
+      <find>source</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,10 +169,11 @@
         <option value="$PROJECT_DIR$/src/output.txt" />
         <option value="$PROJECT_DIR$/src/FraudulentActivity.kt" />
         <option value="$PROJECT_DIR$/src/algorithms/CountingSort.kt" />
+        <option value="$PROJECT_DIR$/src/TalesOfTwoStacks.kt" />
         <option value="$PROJECT_DIR$/src/problem_solving.kts" />
+        <option value="$PROJECT_DIR$/src/CountingInversions.kt" />
         <option value="$PROJECT_DIR$/src/input.txt" />
         <option value="$PROJECT_DIR$/src/algorithms/MergeSort.kt" />
-        <option value="$PROJECT_DIR$/src/TalesOfTwoStacks.kt" />
       </list>
     </option>
   </component>
@@ -230,10 +241,11 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data_structures" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -385,7 +397,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="1680" y="23" width="1920" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -427,13 +439,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/expected.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BalancedBrackets.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -441,7 +446,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QueueOnList.kt">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/QueueOnList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
@@ -466,8 +471,6 @@
             <element signature="e#1448#1707#0" />
             <element signature="e#1741#1955#0" />
             <element signature="e#1990#2203#0" />
-            <element signature="e#2784#3169#0" />
-            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -504,8 +507,6 @@
             <element signature="e#1448#1707#0" />
             <element signature="e#1741#1955#0" />
             <element signature="e#1990#2203#0" />
-            <element signature="e#2784#3169#0" />
-            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -534,7 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QueueOnList.kt">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/QueueOnList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
@@ -590,7 +591,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QueueOnList.kt">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/QueueOnList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="1" lean-forward="true" selection-start-line="2" selection-end-line="9" selection-end-column="1" />
@@ -615,8 +616,6 @@
             <element signature="e#1448#1707#0" />
             <element signature="e#1741#1955#0" />
             <element signature="e#1990#2203#0" />
-            <element signature="e#2784#3169#0" />
-            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -644,8 +643,6 @@
             <element signature="e#1448#1707#0" />
             <element signature="e#1741#1955#0" />
             <element signature="e#1990#2203#0" />
-            <element signature="e#2784#3169#0" />
-            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -689,56 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input(queue).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
-          <folding>
-            <element signature="e#18#86#0" expanded="true" />
-            <element signature="e#411#1024#0" />
-            <element signature="e#1061#1413#0" />
-            <element signature="e#1448#1707#0" />
-            <element signature="e#1741#1955#0" />
-            <element signature="e#1990#2203#0" />
-            <element signature="e#2784#3169#0" />
-            <element signature="e#3229#3617#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/expected.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="872">
@@ -756,31 +703,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/CountingSort.kt">
+    <entry file="file://$PROJECT_DIR$/src/UnionFinder.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="475">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FraudulentActivity.kt">
+    <entry file="file://$PROJECT_DIR$/src/TalesOfTwoStacks.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1240">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="399">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/QuickSelect.kt">
+    <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="777">
+          <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/MergeSort.kt">
+    <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="796">
+          <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
         </state>
       </provider>
     </entry>
@@ -791,24 +738,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UnionFinder.kt">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/QueueOnList.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="171">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QueueOnList.kt">
+    <entry file="file://$PROJECT_DIR$/src/FraudulentActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="-194">
+          <caret line="3" column="19" selection-start-line="3" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TalesOfTwoStacks.kt">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/QuickSelect.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="361">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#18#86#0" expanded="true" />
+            <element signature="e#411#1024#0" />
+            <element signature="e#1061#1413#0" />
+            <element signature="e#1448#1707#0" />
+            <element signature="e#1741#1955#0" />
+            <element signature="e#1990#2203#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/CountingSort.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input(queue).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountingInversions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/MergeSort.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
         </state>
       </provider>
     </entry>

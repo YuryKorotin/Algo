@@ -4,10 +4,12 @@
 class CountingInversions {
     fun countInversions(arr: Array<Int>): Long {
         val sorter = MergeSort()
-        val result : List<Int> = sorter.sort(arr.toMutableList())
+        //val result : List<Int> = sorter.sort(arr.toMutableList())
 
-        println(result.joinToString("-"))
+        val swapsCount: Long = sorter.countSwaps(arr.toMutableList())
 
-        return 0L
+        //result.joinToString("-"))
+
+        return swapsCount
     }
 }

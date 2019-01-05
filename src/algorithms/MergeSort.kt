@@ -1,6 +1,16 @@
 
 
 class MergeSort() {
+    var swapCount = 0L
+
+    fun countSwaps(source: List<Int>) : Long {
+        swapCount = 0
+
+        sort(source)
+
+        return swapCount
+    }
+
     fun sort(source: List<Int>) : List<Int> {
         if (source.size <= 1) {
             return source
@@ -23,6 +33,7 @@ class MergeSort() {
                 newList.add(left[indexLeft])
                 indexLeft++
             } else {
+                swapCount += left.size - indexLeft
                 newList.add(right[indexRight])
                 indexRight++
             }
