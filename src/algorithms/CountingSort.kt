@@ -42,7 +42,7 @@ class CountingSort(val maxValue: Int) {
         }
 
         var prev = countingArray[0]
-        for (i in 0 until countingArray.size) {
+        for (i in 1 until countingArray.size) {
             countingArray[i] += prev
             prev = countingArray[i]
         }
