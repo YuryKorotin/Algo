@@ -55,27 +55,20 @@ open class FraudulentActivity {
         val endOfRange = expenditure.size
         var numberOfNotifications = 0
 
-        val sorter = CountingSort(200)
-        var sliced : Array<Int> = expenditure.slice(0..d - 1).toTypedArray()
-        sliced = sorter.sort(sliced)
+        val sorter = CountingSort(201)
+        val mutableSliced = expenditure.slice(0..d - 1)
+        var sliced = sorter.sortWithoutMutation(mutableSliced.toTypedArray())
 
-        var mediana = 0
-        val isOdd = d % 2 != 0
-        val halfSize = d / 2
+        var mediana = sorter.getMedianDoubledValue(d)
 
         for(i in d until endOfRange) {
-            if (isOdd) {
-                mediana = sliced[halfSize] * 2
-            } else {
-                mediana = sliced[halfSize] + sliced[halfSize - 1]
-            }
+            println("mediana " + mediana)
 
             if (expenditure[i] >= mediana) {
                 numberOfNotifications += 1
             }
 
-            sliced = expenditure.slice(i - d + 1..i).toTypedArray()
-            sliced = sorter.sort(sliced)
+            mediana = sorter.findMedianDoubledValue(expenditure[i - d], expenditure[i], d)
         }
 
         return numberOfNotifications
