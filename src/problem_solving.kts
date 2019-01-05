@@ -10,6 +10,7 @@ import java.io.BufferedReader
 //INCLUDE DavisStaircase.kt
 //INCLUDE CircleQueries.kt
 //INCLUDE FraudulentActivity.kt
+//INCLUDE CountingInversions.kt
 
 class Solution{
     companion object {
@@ -104,7 +105,7 @@ class Solution{
         fun solveCountingInversions() {
             val input = readFromFile("input.txt")
 
-            val solution = FraudulentActivity()
+            val solution = CountingInversions()
 
             val statistics = input.get(1).split(" ")
 
@@ -112,7 +113,7 @@ class Solution{
 
             val convertedList : List<Int> = statistics.map { it.toInt() }
 
-            val output = solution.activityNotificationsCountSort(convertedList.toTypedArray(), d)
+            val output = solution.countInversions(convertedList.toTypedArray())
 
             val listOfOutput = listOf(output.toString())
 
@@ -167,5 +168,5 @@ class Solution{
     }
 }
 
-//Solution.solveFraudulentProblem()
+Solution.solveCountingInversions()
 //Solution.checkSolution("expected.txt")

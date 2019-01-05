@@ -1,61 +1,43 @@
 
 
-class MergeSort {
-    fun sort(source: Array<Int>) {
-        sortByMerging(source, Array(source.size, {0}), 0, source.size - 1)
-    }
-
-    fun sortByMerging(source: Array<Int>, buffer: Array<Int>, start: Int, end: Int) {
-        if (start >= end) {
-            return
+class MergeSort() {
+    fun sort(source: List<Int>) : List<Int> {
+        if (source.size <= 1) {
+            return source
         }
 
-        val halfSize = (start + end) / 2
+        val middle = source.size / 2
+        var left = source.subList(0, middle);
+        var right = source.subList(middle, source.size);
 
-        sortByMerging(source, buffer, start, halfSize)
-        sortByMerging(source, buffer, halfSize + 1, end)
-        mergeHalves(source, buffer, start, end)
+        return merge(sort(left), sort(right))
     }
 
-    fun mergeHalves(source: Array<Int>, buffer: Array<Int>, start, end)  {
-        val leftEnd = (end + start) / 2
-        val rightStart = (leftEnd + 1)
-        val size = end - start + 1
+    fun merge(left: List<Int>, right: List<Int>): List<Int>  {
+        var indexLeft = 0
+        var indexRight = 0
+        var newList : MutableList<Int> = mutableListOf()
 
-        var left = start
-        var right = rightStart
-        var index = start
-
-        while (left <= newEnd && right <= end) {
-            if (sourcep[left] <= source[right]) {
-                buffer[index] = source[left]
-                index++
-                left++
+        while (indexLeft < left.count() && indexRight < right.count()) {
+            if (left[indexLeft] <= right[indexRight]) {
+                newList.add(left[indexLeft])
+                indexLeft++
             } else {
-                buffer[index] = source[right]
-                right++
+                newList.add(right[indexRight])
+                indexRight++
             }
-            index++
         }
-        //public static void arraycopy(Object source, int sourcePosition,
-        // Object destination, int destinationPosition, int numberOfElements)
 
-        copy(source, left, buffer, index, leftEnd - left + 1)
-        copy(source, right, buffer, index, end - right + 1)
-        copy(buffer, start, source, start, size)
-    }
-
-    fun copy(source: Array<Int>,
-            sourcePosition: Int,
-            destination: Array<Int>,
-            destinationPosition: Int,
-            numberOfElements: Int) {
-
-        var destinationIndex = destinationPosition
-
-        for (i in sourcePosition until sourcePosition + numberOfElements) {
-            destination[destinationIndex] = source[i]
-            destinationIndex++
+        while (indexLeft < left.size) {
+            newList.add(left[indexLeft])
+            indexLeft++
         }
+
+        while (indexRight < right.size) {
+            newList.add(right[indexRight])
+            indexRight++
+        }
+
+        return newList;
     }
 }
