@@ -1,6 +1,6 @@
 package solution
 
-//INCLUDE QueueOnList.kt
+//INCLUDE data_structures/QueueOnList.kt
 
 open class TalesOfTwoStacks {
     open fun changeQueue(input : List<String>) : List<String> {
