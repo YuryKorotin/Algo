@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/input_fr_l.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/MergeSort.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FraudulentActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/FraudulentActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/CountingSort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/CountingSort.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input_fr_l.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input(fraudulent_long).txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem_solving.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem_solving.kts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,10 +25,17 @@
       <file leaf-file-name="problem_solving.kts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="96" column="64" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
+            <state relative-caret-position="834">
+              <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
               <folding>
                 <element signature="e#18#86#0" expanded="true" />
+                <element signature="e#411#1024#0" />
+                <element signature="e#1061#1413#0" />
+                <element signature="e#1448#1707#0" />
+                <element signature="e#1741#1955#0" />
+                <element signature="e#1990#2203#0" />
+                <element signature="e#2784#3169#0" />
+                <element signature="e#3229#3617#0" />
               </folding>
             </state>
           </provider>
@@ -53,8 +59,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input_fr_l.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input_fr_l.txt">
+      <file leaf-file-name="input(fraudulent_long).txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
@@ -65,8 +71,15 @@
       <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="12" />
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MergeSort.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algorithms/MergeSort.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -83,8 +96,8 @@
       <file leaf-file-name="FraudulentActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FraudulentActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+            <state relative-caret-position="-401">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -98,20 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CountingSort.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CountingSort.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithms/CountingSort.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="expected.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/expected.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18981">
-              <caret line="999" column="3" selection-start-line="999" selection-start-column="3" selection-end-line="999" selection-end-column="3" />
+            <state relative-caret-position="456">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -162,11 +166,12 @@
         <option value="$PROJECT_DIR$/src/DavisStaircase.kt" />
         <option value="$PROJECT_DIR$/src/data_structures/Trie.kt" />
         <option value="$PROJECT_DIR$/src/algorithms/QuickSelect.kt" />
-        <option value="$PROJECT_DIR$/src/problem_solving.kts" />
         <option value="$PROJECT_DIR$/src/output.txt" />
         <option value="$PROJECT_DIR$/src/FraudulentActivity.kt" />
-        <option value="$PROJECT_DIR$/src/input.txt" />
         <option value="$PROJECT_DIR$/src/algorithms/CountingSort.kt" />
+        <option value="$PROJECT_DIR$/src/problem_solving.kts" />
+        <option value="$PROJECT_DIR$/src/input.txt" />
+        <option value="$PROJECT_DIR$/src/algorithms/MergeSort.kt" />
       </list>
     </option>
   </component>
@@ -431,13 +436,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/input(fraudulent).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/expected.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -472,6 +470,13 @@
           <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
           <folding>
             <element signature="e#18#86#0" expanded="true" />
+            <element signature="e#411#1024#0" />
+            <element signature="e#1061#1413#0" />
+            <element signature="e#1448#1707#0" />
+            <element signature="e#1741#1955#0" />
+            <element signature="e#1990#2203#0" />
+            <element signature="e#2784#3169#0" />
+            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -503,6 +508,13 @@
           <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
           <folding>
             <element signature="e#18#86#0" expanded="true" />
+            <element signature="e#411#1024#0" />
+            <element signature="e#1061#1413#0" />
+            <element signature="e#1448#1707#0" />
+            <element signature="e#1741#1955#0" />
+            <element signature="e#1990#2203#0" />
+            <element signature="e#2784#3169#0" />
+            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -607,6 +619,13 @@
           <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#18#86#0" expanded="true" />
+            <element signature="e#411#1024#0" />
+            <element signature="e#1061#1413#0" />
+            <element signature="e#1448#1707#0" />
+            <element signature="e#1741#1955#0" />
+            <element signature="e#1990#2203#0" />
+            <element signature="e#2784#3169#0" />
+            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -629,6 +648,13 @@
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#18#86#0" expanded="true" />
+            <element signature="e#411#1024#0" />
+            <element signature="e#1061#1413#0" />
+            <element signature="e#1448#1707#0" />
+            <element signature="e#1741#1955#0" />
+            <element signature="e#1990#2203#0" />
+            <element signature="e#2784#3169#0" />
+            <element signature="e#3229#3617#0" />
           </folding>
         </state>
       </provider>
@@ -724,16 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="96" column="64" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
-          <folding>
-            <element signature="e#18#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/input(fraudulent).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="872">
@@ -741,24 +757,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input_fr_l.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="758">
           <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -771,15 +773,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FraudulentActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        <state relative-caret-position="-401">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+          <folding>
+            <element signature="e#18#86#0" expanded="true" />
+            <element signature="e#411#1024#0" />
+            <element signature="e#1061#1413#0" />
+            <element signature="e#1448#1707#0" />
+            <element signature="e#1741#1955#0" />
+            <element signature="e#1990#2203#0" />
+            <element signature="e#2784#3169#0" />
+            <element signature="e#3229#3617#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/CountingSort.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        <state relative-caret-position="456">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/MergeSort.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
         </state>
       </provider>
     </entry>

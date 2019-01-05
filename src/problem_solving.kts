@@ -101,6 +101,23 @@ class Solution{
             writeToFile(listOfOutput)
         }
 
+        fun solveCountingInversions() {
+            val input = readFromFile("input.txt")
+
+            val solution = FraudulentActivity()
+
+            val statistics = input.get(1).split(" ")
+
+            val d = input.get(0).split(" ").get(1).toInt()
+
+            val convertedList : List<Int> = statistics.map { it.toInt() }
+
+            val output = solution.activityNotificationsCountSort(convertedList.toTypedArray(), d)
+
+            val listOfOutput = listOf(output.toString())
+
+            writeToFile(listOfOutput)
+        }
 
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
@@ -150,5 +167,5 @@ class Solution{
     }
 }
 
-Solution.solveFraudulentProblem()
+//Solution.solveFraudulentProblem()
 //Solution.checkSolution("expected.txt")
