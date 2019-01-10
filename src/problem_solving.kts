@@ -11,6 +11,8 @@ import java.io.BufferedReader
 //INCLUDE CircleQueries.kt
 //INCLUDE FraudulentActivity.kt
 //INCLUDE CountingInversions.kt
+//INCLUDE MaxCircles.kt
+
 
 class Solution{
     companion object {
@@ -120,6 +122,32 @@ class Solution{
             writeToFile(listOfOutput)
         }
 
+        fun solveMaxCircles() {
+            val input = readFromFile("input.txt")
+
+            val solution = MaxCircles()
+
+            val lines = input.get(0).toInt()
+
+            val adjacencies : Array<Array<Int>> = Array(lines, {
+                Array(2, {
+                    0
+                })
+            })
+
+
+            for (i in 1..lines) {
+                adjacencies[i - 1][0] = input.get(i).split(" ").get(0).toInt()
+                adjacencies[i - 1][1] = input.get(i).split(" ").get(1).toInt()
+            }
+
+            val output : Array<Int> = solution.maxCircle(adjacencies)
+
+            val listOfOutput = listOf(output.joinToString("\n"))
+
+            writeToFile(listOfOutput)
+        }
+
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
 
@@ -168,5 +196,5 @@ class Solution{
     }
 }
 
-Solution.solveCountingInversions()
+Solution.solveMaxCircles()
 //Solution.checkSolution("expected.txt")
