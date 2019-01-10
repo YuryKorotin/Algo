@@ -1,51 +1,56 @@
 
-open class UnionFinder {
+class UnionFinder {
 
     val parents : HashMap<Int, Int> = HashMap<Int, Int>()
     val sizes : HashMap<Int, Int> = HashMap<Int, Int>()
     var max = 0
-    open fun union(v1: Int, v2: Int) {
 
-        if (!parents.containsKey(v1)) {
-            parents.put(v1, v1)
-            sizes.put(v1, 1)
+    open fun union(firstFriend: Int, secondFriend: Int) {
+        if (!parents.containsKey(firstFriend)) {
+            parents.put(firstFriend, firstFriend)
+            sizes.put(firstFriend, 1)
         }
 
-        if (!parents.containsKey(v2)) {
-            parents.put(v2, v2)
-            sizes.put(v2, 1)
+        if (!parents.containsKey(secondFriend)) {
+            parents.put(secondFriend, secondFriend)
+            sizes.put(secondFriend, 1)
         }
 
-        val p1 = find(v1)
-        val p2 = find(v2)
+        val firstParent = find(firstFriend)
+        val secondParent = find(secondFriend)
 
-        if (p1 == p2) {
+        if (firstParent == secondParent) {
             return
         }
-        val s1 = sizes.get(p1)!!
-        val s2 = sizes.get(p2)!!
-        if (s1 < s2) {
-            parents.put(p1, p2)
-            sizes.put(p2, s1 + s2)
-            if (s1 + s2 > max) {
-                max = s1 + s2
+        val firstSize = sizes.get(firstParent)!!
+        val secondSize = sizes.get(secondParent)!!
+
+        val togetherSize = firstSize + secondSize
+
+        if (firstSize < secondSize) {
+            parents.put(firstParent, secondParent)
+
+            sizes.put(secondParent, togetherSize)
+            if (togetherSize > max) {
+                max = togetherSize
             }
         } else {
-            parents.put(p2, p1)
-            sizes.put(p1, s1 + s2)
-            if (s1 + s2 > max) {
-                max = s1 + s2
+            parents.put(secondParent, firstParent)
+            sizes.put(firstParent, togetherSize)
+            if (togetherSize > max) {
+                max = togetherSize
             }
         }
     }
 
-    open fun find(v : Int) : Int {
-        var result = v
+    open fun find(item : Int) : Int {
+        var result = item
 
         while (parents.get(result) != result) {
-            parents.put(result, parents.get(parents.get(v)!!)!!)
+            parents.put(result, parents.get(parents.get(item)!!)!!)
             result = parents.get(result)!!
         }
+        
         return result
     }
 }

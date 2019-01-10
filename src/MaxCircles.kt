@@ -1,8 +1,9 @@
 package solution
 
+//INCLUDE UnionFinder.kt
 
 class MaxCircles {
-    fun maxCircle(queries: Array<Array<Int>>): Array<Int> {
+    fun oldMaxCircle(queries: Array<Array<Int>>): Array<Int> {
         var originalLinks : MutableList<Int> = mutableListOf()
 
         for (i in 0 until queries.size) {
@@ -27,11 +28,12 @@ class MaxCircles {
             val otherPosition = originalLinks.binarySearch(other)
 
             val currentValueAtOtherPos = analyzedLinks.get(otherPosition)
+            val currentValueAtMinPos = analyzedLinks.get(minPosition)
 
             val valuesToSet = listOf(min)
 
             if (currentValueAtOtherPos != originalLinks.get(otherPosition)) {
-                analyzedLinks.forEachIndexed{ index, item ->
+                analyzedLinks.forEachIndexed { index, item ->
                     if (item == currentValueAtOtherPos) {
                         analyzedLinks.set(index, min)
                     }
@@ -40,8 +42,16 @@ class MaxCircles {
                 analyzedLinks.set(otherPosition, min)
             }
 
+            if (currentValueAtMinPos != originalLinks.get(minPosition)) {
+                analyzedLinks.forEachIndexed { index, item ->
+                    if (item == currentValueAtMinPos) {
+                        analyzedLinks.set(index, min)
+                    }
+                }
+            }
+
             var circleSize = 0
-            analyzedLinks.forEachIndexed{ index, item ->
+            analyzedLinks.forEachIndexed { index, item ->
                 if (item == min) {
                     circleSize++
                 }
@@ -59,6 +69,22 @@ class MaxCircles {
             maximums[i] = max
         }
 
+        return maximums
+    }
+
+    fun maxCircle(queries: Array<Array<Int>>): Array<Int> {
+
+        val finder = UnionFinder()
+
+        val maximums = Array(queries.size, {2})
+
+        for (i in 0 until queries.size) {
+
+            finder.union(queries[i][0], queries[i][1])
+
+            maximums[i] = finder.max
+
+        }
 
         return maximums
     }
