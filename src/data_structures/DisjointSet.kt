@@ -1,27 +1,38 @@
 package solution
 
 
-class DisjointSet(val size: Int) {
-    private val parent = IntArray(size)
-    private val rank = ByteArray(size)
-    public var count = size
-    
+class DisjointSet(val elements: List<Int>) {
+    private val parent = mutableMapOf<Int, Int>()
+    private val rank = mutableMapOf<Int, Int>()
+
+    public var max = 2
+
     init {
-        for (i in parent.indices) {
-            parent[i] = i
+        makeSet()
+    }
+
+    fun makeSet() {
+        elements.forEach{ element ->
+            parent.put(element, element)
         }
     }
+
     public fun connected(v: Int, w: Int): Boolean {
         return find(v) == find(w)
     }
 
-    public fun find(v: Int): Int {
-        var v = v
-        while (parent[v] != v) {
-            parent[v] = parent[parent[v]]
-            v = parent[v]
+    public fun find(element: Int): Int {
+        var element = element
+
+        parent.forEach lit@{ key, value ->
+            println("$key = $value")
+            if (parent.get(element) == element) {
+                return@lit
+            }
+            parent.put(element, parent.get(element)!!)
+            element = parent.get(element)!!
         }
-        return v
+        return element
     }
 
     public fun union(v: Int, w: Int) {
@@ -30,14 +41,22 @@ class DisjointSet(val size: Int) {
         if (rootV == rootW) {
             return
         }
-        if (rank[rootV] > rank[rootW]) {
-            parent[rootW] = rootV
-        } else if (rank[rootW] > rank[rootV]) {
-            parent[rootV] = rootW
+        val rankOfRootV = rank.get(rootV) ?: 0
+        val rankOfRootW = rank.get(rootW) ?: 0
+
+
+        if (rankOfRootV > rankOfRootW) {
+            parent.put(rootW, rootV)
+        } else if (rankOfRootW > rankOfRootV) {
+            parent.put(rootV, rootW)
         } else {
-            parent[rootV] = rootW
-            rank[rootW]++
+            parent.put(rootW, rootV)
+
+            rank.put(rootW, rankOfRootW + 1)
+
+            if (rankOfRootW + 1 > max) {
+                max = rankOfRootW + 1
+            }
         }
-        count--
     }
 }

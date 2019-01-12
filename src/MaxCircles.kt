@@ -1,6 +1,8 @@
 package solution
 
 //INCLUDE UnionFinder.kt
+//INCLUDE data_structures/DisjointSet.kt
+//INCLUDE data_structures/DisjointSet.kt
 
 class MaxCircles {
     fun oldMaxCircle(queries: Array<Array<Int>>): Array<Int> {
@@ -72,6 +74,7 @@ class MaxCircles {
         return maximums
     }
 
+    //fun maxCircleWithUnionFinder(queries: Array<Array<Int>>): Array<Int> {
     fun maxCircle(queries: Array<Array<Int>>): Array<Int> {
 
         val finder = UnionFinder()
@@ -87,5 +90,29 @@ class MaxCircles {
         }
 
         return maximums
+    }
+
+    fun maxCircleWithUnionSet(queries: Array<Array<Int>>): Array<Int> {
+        var originalLinks : MutableList<Int> = mutableListOf()
+
+        for (i in 0 until queries.size) {
+            originalLinks.add(queries[i][0])
+            originalLinks.add(queries[i][1])
+        }
+
+        originalLinks = originalLinks.sorted().distinct().toMutableList()
+
+        val maximums = Array(queries.size, {2})
+        var max = 2
+
+        val set = DisjointSet(originalLinks.toList())
+
+        for (i in 0 until queries.size) {
+            set.union(queries[i][0], queries[i][1])
+            maximums[i] = set.max
+        }
+
+        return maximums
+
     }
 }

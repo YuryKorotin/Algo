@@ -44,13 +44,13 @@ class UnionFinder {
     }
 
     open fun find(item : Int) : Int {
-        var result = item
+        var current = item
 
-        while (parents.get(result) != result) {
-            parents.put(result, parents.get(parents.get(item)!!)!!)
-            result = parents.get(result)!!
+        while (parents.get(current) != current) {
+            parents.put(current, parents.get(parents.get(current)!!)!!)
+            current = parents.get(current)!!
         }
         
-        return result
+        return current
     }
 }
