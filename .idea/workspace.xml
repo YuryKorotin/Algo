@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MaxXor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/input(max_circle).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_structures/TrieForBits.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaxXor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaxXor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem_solving.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem_solving.kts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,17 +37,17 @@
       <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="76">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxXor.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MaxXor.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MaxXor.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="646">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -69,20 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FraudulentActivity.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FraudulentActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="19" selection-start-line="3" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MaxCircles.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MaxCircles.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+            <state relative-caret-position="76">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -99,8 +89,17 @@
       <file leaf-file-name="Trie.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data_structures/Trie.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="570">
               <caret line="30" column="19" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrieForBits.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/TrieForBits.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="48" column="40" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -170,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/UnionFinder.kt" />
         <option value="$PROJECT_DIR$/src/problem_solving.kts" />
         <option value="$PROJECT_DIR$/src/input.txt" />
+        <option value="$PROJECT_DIR$/src/data_structures/TrieForBits.kt" />
         <option value="$PROJECT_DIR$/src/MaxXor.kt" />
       </list>
     </option>
@@ -435,13 +435,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/input(queue).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -732,17 +725,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/Trie.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/input(max_circle).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
           <caret line="1000" column="19" selection-start-line="1000" selection-start-column="19" selection-end-line="1000" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MaxCircles.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -758,8 +751,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="76">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/Trie.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -768,17 +768,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaxCircles.kt">
+    <entry file="file://$PROJECT_DIR$/src/MaxXor.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        <state relative-caret-position="646">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaxXor.kt">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/TrieForBits.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="383">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="40" />
         </state>
       </provider>
     </entry>
