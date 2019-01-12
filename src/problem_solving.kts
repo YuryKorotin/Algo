@@ -12,7 +12,7 @@ import java.io.BufferedReader
 //INCLUDE FraudulentActivity.kt
 //INCLUDE CountingInversions.kt
 //INCLUDE MaxCircles.kt
-
+//INCLUDE MaxXor.kt
 
 class Solution{
     companion object {
@@ -148,6 +148,34 @@ class Solution{
             writeToFile(listOfOutput)
         }
 
+        fun solveMaxXor() {
+            val input = readFromFile("input.txt")
+
+            val solution = MaxXor()
+
+            val arrSize = input.get(0).toInt()
+
+            val arr : Array<Int> = Array(arrSize, { 0 })
+
+            input.get(1).split(" ").forEachIndexed { index, s ->
+                arr[index] = s.toInt()
+            }
+
+            val querySize = input.get(2).toInt()
+
+            val queries : Array<Int> = Array(querySize, {0})
+
+            for (i in 0 until querySize) {
+                queries[i] = input.get(3 + i).toInt()
+            }
+
+            val output : Array<Int> = solution.maxXor(arr, queries)
+
+            val listOfOutput = listOf(output.joinToString("\n"))
+
+            writeToFile(listOfOutput)
+        }
+
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
 
@@ -196,5 +224,5 @@ class Solution{
     }
 }
 
-Solution.solveMaxCircles()
+Solution.solveMaxXor()
 //Solution.checkSolution("expected.txt")
