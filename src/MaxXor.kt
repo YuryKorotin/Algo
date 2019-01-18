@@ -26,7 +26,7 @@ class MaxXor {
     fun maxXor(arr: Array<Int>, queries: Array<Int>): Array<Int> {
         val result = Array<Int>(queries.size, {0})
 
-        val trie = TrieForBits(arr.sorted()[arr.size - 1])
+        val trie = TrieForBits()
 
         arr.forEach{ item ->
             trie.add(item)

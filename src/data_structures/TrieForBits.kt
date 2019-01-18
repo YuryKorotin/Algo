@@ -1,14 +1,14 @@
 package solution
 
 
-class TrieForBits(val maxBit : Int = 31) {
-    val root = Node(maxBit)
+class TrieForBits() {
+    val root = Node()
 
-    class Node(val maxBit : Int = 31) {
+    class Node() {
         var children = Array<Node?>(2, {null})
 
         fun add(value: Int, index: Int) {
-            val bitPos = maxBit - index
+            val bitPos = 31 - index
             if (bitPos < 0) {
                 return
             }

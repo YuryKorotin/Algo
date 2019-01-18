@@ -13,6 +13,7 @@ import java.io.BufferedReader
 //INCLUDE CountingInversions.kt
 //INCLUDE MaxCircles.kt
 //INCLUDE MaxXor.kt
+//INCLUDE SpecialPalindromeAgain.kt
 
 class Solution{
     companion object {
@@ -176,6 +177,20 @@ class Solution{
             writeToFile(listOfOutput)
         }
 
+        fun solveSpecialPalindromeAgain() {
+            val input = readFromFile("input.txt")
+
+            val solution = SpecialPalindromeAgain()
+
+            val stringLength = input.get(0).toInt()
+
+            val output : Long = solution.substrCount(stringLength, input.get(1))
+
+            val listOfOutput = listOf(output.toString())
+
+            writeToFile(listOfOutput)
+        }
+
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
 
@@ -224,5 +239,5 @@ class Solution{
     }
 }
 
-Solution.solveMaxXor()
+Solution.solveSpecialPalindromeAgain()
 //Solution.checkSolution("expected.txt")
