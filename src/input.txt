@@ -1,2 +1,2 @@
-7
-abcbaba
+5
+asasd
