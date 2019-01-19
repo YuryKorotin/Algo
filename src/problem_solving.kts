@@ -14,6 +14,7 @@ import java.io.BufferedReader
 //INCLUDE MaxCircles.kt
 //INCLUDE MaxXor.kt
 //INCLUDE SpecialPalindromeAgain.kt
+//INCLUDE CommonChild.kt
 
 class Solution{
     companion object {
@@ -191,6 +192,20 @@ class Solution{
             writeToFile(listOfOutput)
         }
 
+        fun solveCommonChild() {
+            val input = readFromFile("input.txt")
+
+            val solution = CommonChild()
+
+            val firstString = input.get(0)
+
+            val output : Int = solution.commonChild(input.get(0), input.get(1))
+
+            val listOfOutput = listOf(output.toString())
+
+            writeToFile(listOfOutput)
+        }
+
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
 
@@ -239,5 +254,5 @@ class Solution{
     }
 }
 
-Solution.solveSpecialPalindromeAgain()
+Solution.solveCommonChild()
 //Solution.checkSolution("expected.txt")
