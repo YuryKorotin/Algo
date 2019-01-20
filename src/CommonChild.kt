@@ -10,10 +10,84 @@ child because we can't rearrange characters and ABCD  ABDC.
 * */
 
 class CommonChild {
-    fun commonChild(s1: String, s2: String): Int {
-        var result = 0
+    fun commonChild(firstString: String, secondString: String): Int {
+        var firstCommon = ""
+        var secondPositions = mutableListOf<Int>()
+
+        var lastCommon = 0
+
+        for (i in 0 until firstString.length) {
+            for (j in 0 until secondString.length) {
+                if (firstString[i] == secondString[j]) {
+                    secondPositions.add(j)
+                    if (lastCommon == i) {
+                        continue
+                    }
+                    lastCommon = i
+
+                    firstCommon += firstString[i]
+                }
+            }
+        }
+
+        var secondCommon = ""
+
+        val secondPositionsSorted = secondPositions.sorted().distinct()
+
+        for (i in 0 until secondPositionsSorted.size) {
+            secondCommon += secondString[secondPositionsSorted[i]]
+        }
+
+        val commonChilds = mutableListOf<String>()
+
+        var i = 0
+        var j = 0
+        var child  = ""
+        println(firstCommon)
+        println(secondCommon)
+        while (i < firstCommon.length) {
+            j = 0
+            if (child.isNotEmpty()) {
+                commonChilds.add(child)
+                child = ""
+            }
+            while (j < secondCommon.length) {
+                if (i == firstCommon.length) {
+                    commonChilds.add(child)
+                    child = ""
+                    break
+                }
+
+                println("i=$i and j=$j")
+                if (firstCommon[i] == secondCommon[j]) {
+                    child += firstCommon[i]
+
+                    println("child=$child")
+
+                    if (j != secondCommon.length - 1) {
+                        i++
+                    }
+                }
+
+                j++
+            }
+
+            i++
+        }
+        if (child.isNotEmpty()) {
+            commonChilds.add(child)
+            println("child=$child")
+        }
+
+        var max = 0
+        commonChilds.forEach { item ->
+            println(item)
+            if (item.length > max) {
+                max = item.length
+            }
+        }
 
 
-        return result
+        return max
     }
 }
