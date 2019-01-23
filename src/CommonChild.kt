@@ -96,15 +96,32 @@ class CommonChild {
     }
 
     //Longest common subsequence
-    fun LCS(x : String, y : String) : Int{
+    fun LCS(x : String, y : String) : Int {
+        var startPosition = 0
+        var xCommonEnd = x.length - 1
+        var yCommonEnd = y.length - 1
+
+        while (startPosition <= xCommonEnd &&
+                startPosition <= yCommonEnd &&
+                x[startPosition] == y[startPosition]) {
+            startPosition++
+        }
+
+        while (startPosition <= xCommonEnd &&
+                startPosition <= yCommonEnd &&
+                x[xCommonEnd] == y[yCommonEnd]) {
+            xCommonEnd--
+            yCommonEnd--
+        }
+
         val lengthStorage : Array<Array<Int>> = Array(x.length + 1, {
             Array(y.length + 1, {
                 0
             })
         })
 
-        for(i in 0 until x.length) {
-            for(j in 0 until y.length) {
+        for(i in startPosition until xCommonEnd) {
+            for(j in startPosition until yCommonEnd) {
                 if (x[i] == y[j]) {
                     lengthStorage[i + 1][j + 1] = lengthStorage[i][j] + 1
                 } else {
@@ -113,6 +130,6 @@ class CommonChild {
             }
         }
 
-        return lengthStorage[x.length][y.length]
+        return lengthStorage[xCommonEnd][yCommonEnd]
     }
 }
