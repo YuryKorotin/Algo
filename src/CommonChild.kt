@@ -10,7 +10,7 @@ child because we can't rearrange characters and ABCD  ABDC.
 * */
 
 class CommonChild {
-    fun commonChild(firstString: String, secondString: String): Int {
+    fun commonChildOld(firstString: String, secondString: String): Int {
         var firstCommon = ""
         var secondPositions = mutableListOf<Int>()
 
@@ -89,5 +89,30 @@ class CommonChild {
 
 
         return max
+    }
+
+    fun commonChild(firstString: String, secondString: String): Int {
+        return LCS(firstString, secondString)
+    }
+
+    //Longest common subsequence
+    fun LCS(x : String, y : String) : Int{
+        val lengthStorage : Array<Array<Int>> = Array(x.length + 1, {
+            Array(y.length + 1, {
+                0
+            })
+        })
+
+        for(i in 0 until x.length) {
+            for(j in 0 until y.length) {
+                if (x[i] == y[j]) {
+                    lengthStorage[i + 1][j + 1] = lengthStorage[i][j] + 1
+                } else {
+                    lengthStorage[i + 1][j + 1] = maxOf(lengthStorage[i + 1][j], lengthStorage[i][j + 1])
+                }
+            }
+        }
+
+        return lengthStorage[x.length][y.length]
     }
 }
