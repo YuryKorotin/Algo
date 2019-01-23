@@ -92,44 +92,74 @@ class CommonChild {
     }
 
     fun commonChild(firstString: String, secondString: String): Int {
-        return LCS(firstString, secondString)
+        val shortStrings = shortenStrings(firstString, secondString)
+        return LCS(shortStrings[0], shortStrings[1])
+    }
+
+    fun shortenStrings(x : String, y : String) : List<String> {
+        println("length=${x.length}")
+        var xCommonEnd = x.length - 1
+        var yCommonEnd = y.length - 1
+
+        var xCommonStart = 0
+        var yCommonStart = 0
+
+        for(i in 0 until x.length) {
+            if (y.contains(x[i])) {
+                xCommonStart = i
+                println("xStart=$xCommonStart")
+                break
+            }
+        }
+
+        for(i in 0 until y.length) {
+            if (x.contains(y[i])) {
+                yCommonStart = i
+                println("yStart=$yCommonStart")
+                break
+            }
+        }
+
+        for(i in y.length - 1 downTo 0) {
+            if (x.contains(y[i])) {
+                yCommonEnd = i
+                println("yEnd=$yCommonEnd")
+                break
+            }
+        }
+
+        for(i in x.length - 1 downTo 0) {
+            if (y.contains(x[i])) {
+                xCommonEnd = i
+                println("xEnd=$xCommonEnd")
+                break
+            }
+        }
+
+        return listOf(x.substring(xCommonStart, xCommonEnd + 1), y.substring(yCommonStart, yCommonEnd + 1))
     }
 
     //Longest common subsequence
     fun LCS(x : String, y : String) : Int {
         var startPosition = 0
-        var xCommonEnd = x.length - 1
-        var yCommonEnd = y.length - 1
+        var xCommonEnd = x.length
+        var yCommonEnd = y.length
 
-        while (startPosition <= xCommonEnd &&
-                startPosition <= yCommonEnd &&
-                x[startPosition] == y[startPosition]) {
-            startPosition++
-        }
-
-        while (startPosition <= xCommonEnd &&
-                startPosition <= yCommonEnd &&
-                x[xCommonEnd] == y[yCommonEnd]) {
-            xCommonEnd--
-            yCommonEnd--
-        }
-
-        val lengthStorage : Array<Array<Int>> = Array(x.length + 1, {
-            Array(y.length + 1, {
-                0
-            })
-        })
+        var previousStorage = Array<Int>(x.length + 1, {0})
+        var currentStorage = Array<Int>(x.length + 1, {0})
 
         for(i in startPosition until xCommonEnd) {
             for(j in startPosition until yCommonEnd) {
                 if (x[i] == y[j]) {
-                    lengthStorage[i + 1][j + 1] = lengthStorage[i][j] + 1
+                    currentStorage[j + 1] = previousStorage[j] + 1
                 } else {
-                    lengthStorage[i + 1][j + 1] = maxOf(lengthStorage[i + 1][j], lengthStorage[i][j + 1])
+                    currentStorage[j + 1] = maxOf(currentStorage[j], previousStorage[j + 1])
                 }
             }
+            previousStorage = currentStorage
+            currentStorage = Array<Int>(x.length + 1, {0})
         }
 
-        return lengthStorage[xCommonEnd][yCommonEnd]
+        return previousStorage[yCommonEnd]
     }
 }
