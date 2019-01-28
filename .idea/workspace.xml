@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CommonChild.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommonChild.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input(commonchild).txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +22,7 @@
       <file leaf-file-name="problem_solving.kts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2527">
+            <state relative-caret-position="2489">
               <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="137" selection-end-column="14" />
               <folding>
                 <element signature="e#18#86#0" expanded="true" />
@@ -33,20 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonChild.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommonChild.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CommonChild.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="164" column="1" lean-forward="true" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CircleQueries.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CircleQueries.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="2831">
+              <caret line="149" selection-start-line="149" selection-end-line="149" />
             </state>
           </provider>
         </entry>
@@ -69,11 +58,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input.txt">
+      <file leaf-file-name="input(brackets).txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input(commonchild).txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input(commonchild).txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="1" column="4359" selection-start-line="1" selection-start-column="4359" selection-end-line="1" selection-end-column="4359" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input(max_circle).txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input(max_circle).txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="1000" column="19" selection-start-line="1000" selection-start-column="19" selection-end-line="1000" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input(special_palindrome_again).txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/input(special_palindrome_again).txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -87,29 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CountingInversions.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountingInversions.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DavisStaircase.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DavisStaircase.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
               <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="expected.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/expected.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18981">
-              <caret line="999" column="3" selection-start-line="999" selection-start-column="3" selection-end-line="999" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -402,7 +400,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1673" height="939" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -434,32 +431,32 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Flutter Inspector" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32848486" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Fabric" order="5" />
+      <window_info anchor="right" id="Flutter Inspector" order="7" />
       <window_info id="Captures" order="3" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321186" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Flutter Outline" order="8" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Fabric" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987879" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329849" />
       <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
@@ -607,13 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/input(fraudulent).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="872">
@@ -677,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input(max_circle).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19000">
-          <caret line="1000" column="19" selection-start-line="1000" selection-start-column="19" selection-end-line="1000" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data_structures/Trie.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -733,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input(special_palindrome_again).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CircleQueries.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -770,7 +746,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2527">
+        <state relative-caret-position="2489">
           <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="137" selection-end-column="14" />
           <folding>
             <element signature="e#18#86#0" expanded="true" />
@@ -785,20 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="4359" selection-start-line="1" selection-start-column="4359" selection-end-line="1" selection-end-column="4359" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/output.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -808,8 +770,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CommonChild.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="164" column="1" lean-forward="true" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
+        <state relative-caret-position="2831">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input(commonchild).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="4359" selection-start-line="1" selection-start-column="4359" selection-end-line="1" selection-end-column="4359" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input(max_circle).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="1000" column="19" selection-start-line="1000" selection-start-column="19" selection-end-line="1000" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input(special_palindrome_again).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
