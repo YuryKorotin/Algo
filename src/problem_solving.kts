@@ -15,6 +15,7 @@ import java.io.BufferedReader
 //INCLUDE MaxXor.kt
 //INCLUDE SpecialPalindromeAgain.kt
 //INCLUDE CommonChild.kt
+//INCLUDE CrosswordPuzzle.kt
 
 class Solution{
     companion object {
@@ -206,6 +207,28 @@ class Solution{
             writeToFile(listOfOutput)
         }
 
+        fun solveCrosswordPuzzle() {
+            val input = readFromFile("input.txt")
+
+            val solution = CrosswordPuzzle()
+
+            val crosswordSize = 10
+
+            val crossword = Array<String>(10, { "" })
+            for (i in 0 until 10) {
+                val crosswordItem = input.get(i)
+                crossword[i] = crosswordItem
+            }
+
+            val words = input.get(crosswordSize)
+
+            val output : Array<String> = solution.putWords(crossword, words)
+
+            val listOfOutput = listOf(output.toString())
+
+            writeToFile(listOfOutput)
+        }
+
         fun readFromConsole() : List<String>{
             val lineList = mutableListOf<String>()
 
@@ -254,5 +277,5 @@ class Solution{
     }
 }
 
-Solution.solveCommonChild()
+Solution.solveCrosswordPuzzle()
 //Solution.checkSolution("expected.txt")
