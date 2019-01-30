@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CrosswordPuzzle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CrosswordPuzzle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/problem_solving.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem_solving.kts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +23,8 @@
       <file leaf-file-name="problem_solving.kts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="224" column="54" selection-start-line="224" selection-start-column="54" selection-end-line="224" selection-end-column="54" />
+            <state relative-caret-position="519">
+              <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
               <folding>
                 <element signature="e#18#86#0" expanded="true" />
               </folding>
@@ -33,7 +35,7 @@
       <file leaf-file-name="CommonChild.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CommonChild.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2831">
+            <state relative-caret-position="848">
               <caret line="149" selection-start-line="149" selection-end-line="149" />
             </state>
           </provider>
@@ -51,7 +53,7 @@
       <file leaf-file-name="input(fraudulent_long).txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
+            <state relative-caret-position="13110">
               <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
             </state>
           </provider>
@@ -60,7 +62,7 @@
       <file leaf-file-name="input(brackets).txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
+            <state relative-caret-position="11951">
               <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
             </state>
           </provider>
@@ -78,7 +80,7 @@
       <file leaf-file-name="input(max_circle).txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input(max_circle).txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
+            <state relative-caret-position="19000">
               <caret line="1000" column="19" selection-start-line="1000" selection-start-column="19" selection-end-line="1000" selection-end-column="19" />
             </state>
           </provider>
@@ -105,8 +107,8 @@
       <file leaf-file-name="CrosswordPuzzle.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CrosswordPuzzle.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="663">
+              <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
               <folding>
                 <element signature="e#18#78#0" expanded="true" />
               </folding>
@@ -137,6 +139,11 @@
       <find>solveCommonChild</find>
       <find>Array&lt;Arr</find>
       <find>grid</find>
+      <find>putWords</find>
+      <find>result</find>
+      <find>SIZE</find>
+      <find>remainWords</find>
+      <find>search</find>
     </findStrings>
     <replaceStrings>
       <replace>crossword</replace>
@@ -187,10 +194,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1673" />
-    <option name="height" value="935" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-126" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -198,9 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +245,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,7 +414,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1673" height="935" extended-state="0" />
+    <frame x="-126" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -421,7 +429,8 @@
       <window_info anchor="right" id="Flutter Outline" order="4" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321186" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17631297" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -436,37 +445,36 @@
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329849" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32848486" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Flutter Inspector" order="7" />
       <window_info id="Captures" order="3" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321186" />
+      <window_info anchor="right" id="Flutter Outline" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Flutter Outline" order="8" />
       <window_info anchor="right" id="Fabric" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987879" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Flutter Performance" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329849" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321186" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -752,23 +760,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CommonChild.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2831">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/input(fraudulent_long).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
+        <state relative-caret-position="13110">
           <caret line="1" column="689951" selection-end-line="1" selection-end-column="690078" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/input(brackets).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
+        <state relative-caret-position="11951">
           <caret line="629" column="728" selection-start-line="629" selection-start-column="728" selection-end-line="629" selection-end-column="728" />
         </state>
       </provider>
@@ -782,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/input(max_circle).txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
+        <state relative-caret-position="19000">
           <caret line="1000" column="19" selection-start-line="1000" selection-start-column="19" selection-end-line="1000" selection-end-column="19" />
         </state>
       </provider>
@@ -803,18 +804,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/problem_solving.kts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="224" column="54" selection-start-line="224" selection-start-column="54" selection-end-line="224" selection-end-column="54" />
+        <state relative-caret-position="519">
+          <caret line="229" lean-forward="true" selection-start-line="229" selection-end-line="229" />
           <folding>
             <element signature="e#18#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CommonChild.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CrosswordPuzzle.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="663">
+          <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
           <folding>
             <element signature="e#18#78#0" expanded="true" />
           </folding>

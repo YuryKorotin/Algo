@@ -4,32 +4,37 @@ import java.util.ArrayList
 import java.util.stream.IntStream
 
 
-
-
-
 class CrosswordPuzzle {
 
     val size = 10
     val r_offsets = intArrayOf(0, 1)
     val c_offsets = intArrayOf(1, 0)
 
-    fun putWords(crossword: Array<String>, words: String): Array<String> {
+    fun putWords(crossword: Array<String>, words: String): Array<CharArray>? {
         var wordsList = words.split(";").toMutableList()
 
         val wordSet: MutableSet<String> = mutableSetOf()
 
         wordSet.addAll(wordsList)
 
-        val result = search(crossword, wordSet, 0, 0, 0);
+        val crosswordMatrix = Array(size) { CharArray(size) }
+        for (i in 0 until size) {
+            val line = crossword.get(i)
+            for (j in 0 until size) {
+                crosswordMatrix[i][j] = line[j]
+            }
+        }
+
+        val result = search(crosswordMatrix, wordSet, 0, 0, 0);
 
         return result
     }
 
-    fun search(crossword: Array<String>,
+    fun search(crossword: Array<CharArray>,
                wordSet: MutableSet<String>,
                r: Int,
                c: Int,
-               direction: Int) : Array<String> {
+               direction: Int) : Array<CharArray>? {
 
         if (r == size) {
             return crossword
@@ -37,13 +42,13 @@ class CrosswordPuzzle {
         if (c == size) {
             return search(crossword, wordSet, r + 1, 0, 0);
         }
-        if (direction == r_offsets.length) {
+        if (direction == r_offsets.size) {
             return search(crossword, wordSet, r, c + 1, 0);
         }
 
         val insertLength = countInsertLength(crossword, r, c, direction)
         if (insertLength > 1) {
-            for (wordSet in ArrayList<String>(wordSet)) {
+            for (remainWord in ArrayList<String>(wordSet)) {
                 if (canInsert(crossword, r, c, direction, insertLength, remainWord)) {
                     val insertOffsets = ArrayList<Int>()
 
@@ -59,7 +64,7 @@ class CrosswordPuzzle {
                     }
                     wordSet.remove(remainWord)
 
-                    val subResult = search(crossword, remainWords, r, c, direction + 1)
+                    val subResult = search(crossword, wordSet, r, c, direction + 1)
                     if (subResult != null) {
                         return subResult
                     }
@@ -76,7 +81,7 @@ class CrosswordPuzzle {
 
             return null
         } else {
-            return search(crossword, remainWords, r, c, direction + 1)
+            return search(crossword, wordSet, r, c, direction + 1)
         }
     }
 
@@ -85,7 +90,7 @@ class CrosswordPuzzle {
         var c = c
         val prevR = r - r_offsets[direction]
         val prevC = c - c_offsets[direction]
-        if (prevR >= 0 && prevR < size && prevC >= 0 && prevC < SIZE && crossword[prevR][prevC] != '+') {
+        if (prevR >= 0 && prevR < size && prevC >= 0 && prevC < size && crossword[prevR][prevC] != '+') {
             return 0
         }
 
@@ -100,11 +105,14 @@ class CrosswordPuzzle {
     }
 
     fun canInsert(crossword: Array<CharArray>, r: Int, c: Int, direction: Int, insertLength: Int, word: String): Boolean {
-        return word.length == insertLength && IntStream.range(0, word.length).allMatch({ insertOffset ->
+
+        var result = false
+
+        for (insertOffset in 0 until word.length){
             val insertR = r + r_offsets[direction] * insertOffset
             val insertC = c + c_offsets[direction] * insertOffset
-
-            crossword[insertR][insertC] == '-' || crossword[insertR][insertC] == word[insertOffset]
-        })
+            result = crossword[insertR][insertC] == '-' || crossword[insertR][insertC] == word[insertOffset]
+        }
+        return word.length == insertLength && result
     }
 }

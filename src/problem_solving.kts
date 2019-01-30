@@ -222,11 +222,22 @@ class Solution{
 
             val words = input.get(crosswordSize)
 
-            val output : Array<String> = solution.putWords(crossword, words)
+            val result = solution.putWords(crossword, words)
 
-            val listOfOutput = listOf(output.toString())
+            if (result == null) {
 
-            writeToFile(listOfOutput)
+                println("Wrong input, cannot be solving")
+
+                return
+            }
+
+            val output = mutableListOf<String>()
+
+            for(i in 0 until result.size) {
+                output.add(String(result[i]))
+            }
+
+            writeToFile(output)
         }
 
         fun readFromConsole() : List<String>{
