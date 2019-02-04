@@ -20,7 +20,9 @@ class Launcher {
 
             assertTrue(checker.isPermutationOfPalindrome(""))
 
-            assertTrue()
+            assertTrue(checker.isPermutationOfPalindrome(" "))
+
+            assertTrue(checker.isPermutationOfPalindrome("Bbb"))
 
             println("End testing solution of problem $problemName")
         }
