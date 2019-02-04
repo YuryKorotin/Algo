@@ -24,6 +24,8 @@ class Launcher {
 
             assertTrue(checker.isPermutationOfPalindrome("Bbb"))
 
+            assertTrue(checker.isPermutationOfPalindrome("Tact Coa"))
+
             println("End testing solution of problem $problemName")
         }
     }
