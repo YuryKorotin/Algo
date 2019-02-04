@@ -7,22 +7,24 @@ import org.junit.Assert.*
 class Launcher {
     companion object {
 
-        fun checkSolution(fileName: String, problemName: String) {
-            println("Start checking of problem solution$problemName ...")
+        fun measureTime(fileName: String, problemName: String) {
+            println("Start measuring time of problem solution $problemName ...")
 
-            println("End checking of problem solution $problemName")
+            println("End mesuaring time of problem solution $problemName")
         }
 
-        fun solveProblem(problemName: String) {
-            println("Start solution of problem $problemName...")
+        fun testProblemSolution(problemName: String) {
+            println("Start testing solution of problem $problemName...")
 
             var checker = PalindromePermutationChecker()
 
             assertTrue(checker.isPermutationOfPalindrome(""))
 
-            println("End solution of problem $problemName")
+            assertTrue()
+
+            println("End testing solution of problem $problemName")
         }
     }
 }
 
-Launcher.solveProblem("Palindrom permutation")
+Launcher.testProblemSolution("Palindrom permutation")
