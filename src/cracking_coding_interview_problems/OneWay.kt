@@ -1,3 +1,5 @@
-class OneWay {
+//INCLUDE Solution.kt
+
+class OneWay: Solution {
 
 }

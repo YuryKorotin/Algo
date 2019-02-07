@@ -4,6 +4,7 @@ import org.junit.Assert.*
 
 //INCLUDE PalindromePermutationChecker.kt
 //INCLUDE Oneway.kt
+//INCLUDE Solution.kt
 
 class Launcher {
     companion object {
@@ -14,7 +15,7 @@ class Launcher {
             println("End mesuaring time of problem solution $problemName")
         }
 
-        fun testProblemSolution(problemName: String, test: (checker: PalindromePermutationChecker) -> Void) {
+        fun testProblemSolution(problemName: String, test: (solution: Solution) -> Unit) {
             println("Start testing solution of problem $problemName...")
 
             var checker = PalindromePermutationChecker()
@@ -26,16 +27,17 @@ class Launcher {
     }
 }
 
-val palindromeTest = {
+val palindromeTest = { solution: Solution ->
+    val checker = solution as PalindromePermutationChecker
     assertTrue(checker.isPermutationOfPalindrome(""))
     assertTrue(checker.isPermutationOfPalindrome(" "))
     assertTrue(checker.isPermutationOfPalindrome("Bbb"))
     assertTrue(checker.isPermutationOfPalindrome("Tact Coa"))
 }
 
-val oneWayTest = {
+val oneWayTest = { solution: Solution ->
     println("One way test")
 }
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest)
-Launcher.testProblemSolution("One way", )
+Launcher.testProblemSolution("One way", oneWayTest)

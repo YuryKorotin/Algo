@@ -1,6 +1,6 @@
+//INCLUDE Solution.kt
 
-
-class PalindromePermutationChecker {
+class PalindromePermutationChecker : Solution {
     //Strings with even length should have even counts, strings with odd characters should have
     //one character with odd count
 

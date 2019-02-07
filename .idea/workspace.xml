@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +34,8 @@
       <file leaf-file-name="solution_launcher.kts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="246">
+              <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -41,8 +43,8 @@
       <file leaf-file-name="OneWay.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="14" lean-forward="true" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -50,8 +52,17 @@
       <file leaf-file-name="PalindromePermutationChecker.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+            <state relative-caret-position="38">
+              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="solution.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" selection-start-column="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -79,15 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2831">
               <caret line="149" selection-start-line="149" selection-end-line="149" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input(special_palindrome_again).txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input(special_palindrome_again).txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -190,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/problem_solving.kts" />
         <option value="$PROJECT_DIR$/src/CrosswordPuzzle.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutation.kt" />
+        <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" />
@@ -481,13 +484,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/expected.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -790,22 +786,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        <state relative-caret-position="38">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="14" lean-forward="true" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="246">
+          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
         </state>
       </provider>
     </entry>
