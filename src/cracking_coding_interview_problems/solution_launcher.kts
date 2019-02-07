@@ -3,6 +3,7 @@ import org.junit.Assert.*
 
 
 //INCLUDE PalindromePermutationChecker.kt
+//INCLUDE Oneway.kt
 
 class Launcher {
     companion object {
@@ -13,22 +14,28 @@ class Launcher {
             println("End mesuaring time of problem solution $problemName")
         }
 
-        fun testProblemSolution(problemName: String) {
+        fun testProblemSolution(problemName: String, test: (checker: PalindromePermutationChecker) -> Void) {
             println("Start testing solution of problem $problemName...")
 
             var checker = PalindromePermutationChecker()
 
-            assertTrue(checker.isPermutationOfPalindrome(""))
-
-            assertTrue(checker.isPermutationOfPalindrome(" "))
-
-            assertTrue(checker.isPermutationOfPalindrome("Bbb"))
-
-            assertTrue(checker.isPermutationOfPalindrome("Tact Coa"))
+            test(checker)
 
             println("End testing solution of problem $problemName")
         }
     }
 }
 
-Launcher.testProblemSolution("Palindrom permutation")
+val palindromeTest = {
+    assertTrue(checker.isPermutationOfPalindrome(""))
+    assertTrue(checker.isPermutationOfPalindrome(" "))
+    assertTrue(checker.isPermutationOfPalindrome("Bbb"))
+    assertTrue(checker.isPermutationOfPalindrome("Tact Coa"))
+}
+
+val oneWayTest = {
+    println("One way test")
+}
+
+Launcher.testProblemSolution("Palindrom permutation", palindromeTest)
+Launcher.testProblemSolution("One way", )
