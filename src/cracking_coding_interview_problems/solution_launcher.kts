@@ -15,12 +15,12 @@ class Launcher {
             println("End mesuaring time of problem solution $problemName")
         }
 
-        fun testProblemSolution(problemName: String, test: (solution: Solution) -> Unit) {
+        fun testProblemSolution(problemName: String,
+                                test: (solution: Solution) -> Unit,
+                                solution: Solution) {
             println("Start testing solution of problem $problemName...")
 
-            var checker = PalindromePermutationChecker()
-
-            test(checker)
+            test(solution)
 
             println("End testing solution of problem $problemName")
         }
@@ -36,8 +36,16 @@ val palindromeTest = { solution: Solution ->
 }
 
 val oneWayTest = { solution: Solution ->
-    println("One way test")
+    val oneWay = solution as OneWay
+
+    assertTrue(oneWay.wasOperationApplied("pale", "ple"))
+    assertTrue(oneWay.wasOperationApplied("pales", "pale"))
+    assertTrue(oneWay.wasOperationApplied("pale", "bale"))
+    assertTrue(!oneWay.wasOperationApplied("pale", "bae"))
 }
 
-Launcher.testProblemSolution("Palindrom permutation", palindromeTest)
-Launcher.testProblemSolution("One way", oneWayTest)
+var checker = PalindromePermutationChecker()
+val oneWay = OneWay()
+
+Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
+Launcher.testProblemSolution("One way", oneWayTest, oneWay)
