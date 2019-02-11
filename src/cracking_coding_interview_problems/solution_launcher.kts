@@ -4,6 +4,7 @@ import org.junit.Assert.*
 
 //INCLUDE PalindromePermutationChecker.kt
 //INCLUDE Oneway.kt
+//INCLUDE StringCompression.kt
 //INCLUDE Solution.kt
 
 class Launcher {
@@ -44,8 +45,17 @@ val oneWayTest = { solution: Solution ->
     assertTrue(!oneWay.wasOperationApplied("pale", "bae"))
 }
 
+val stringCompressionTest = { solution: Solution ->
+    val compression = solution as StringCompression
+
+    assertTrue(compression.compress("pale").equals("pale"))
+    assertTrue(compression.compress("aabcccccaaa").equals("a2b1c5a3"))
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
+val stringCompression = StringCompression()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
+Launcher.testProblemSolution("String compression", stringCompressionTest, stringCompression)

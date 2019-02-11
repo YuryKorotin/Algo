@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/StringCompression.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +29,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="solution_launcher.kts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="solution_launcher.kts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+            <state relative-caret-position="467">
+              <caret line="51" column="70" lean-forward="true" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringCompression.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/StringCompression.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kotlin.kotlin_builtins" pinned="false" current-in-tab="false">
+        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar!/kotlin/kotlin.kotlin_builtins">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="1020" column="20" selection-start-line="1020" selection-start-column="20" selection-end-line="1020" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -40,8 +59,8 @@
       <file leaf-file-name="OneWay.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="391">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -49,8 +68,8 @@
       <file leaf-file-name="PalindromePermutationChecker.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
+            <state>
+              <caret column="10" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -78,24 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
               <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonChild.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CommonChild.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2831">
-              <caret line="149" selection-start-line="149" selection-end-line="149" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -193,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" />
+        <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/StringCompression.kt" />
       </list>
     </option>
   </component>
@@ -240,9 +242,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,6 +444,7 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32848486" />
@@ -453,23 +456,22 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Fabric" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987879" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Flutter Performance" order="11" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329849" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20321186" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -481,20 +483,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/expected.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BalancedBrackets.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data_structures/QueueOnList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -781,6 +769,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -788,24 +783,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt">
+    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state>
+          <caret column="10" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/PalindromePermutationChecker.kt">
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar!/kotlin/kotlin.kotlin_builtins">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="259">
+          <caret line="1020" column="20" selection-start-line="1020" selection-start-column="20" selection-end-line="1020" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        <state relative-caret-position="467">
+          <caret line="51" column="70" lean-forward="true" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/StringCompression.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
