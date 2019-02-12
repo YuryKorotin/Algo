@@ -6,6 +6,7 @@ import org.junit.Assert.*
 //INCLUDE Oneway.kt
 //INCLUDE StringCompression.kt
 //INCLUDE Solution.kt
+//INCLUDE MatrixRotation.kt
 
 class Launcher {
     companion object {
@@ -52,10 +53,36 @@ val stringCompressionTest = { solution: Solution ->
     assertTrue(compression.compress("aabcccccaaa").equals("a2b1c5a3"))
 }
 
+val matrixRotationTest = { solution: Solution ->
+    val size = 10
+    val testArray = Array(size, {
+        Array(size, {
+            size - it
+        })
+    })
+
+    val rotation = solution as MatrixRotation
+
+    val result = rotation.apply(testArray)
+
+    for(i in 0 until testArray.size) {
+        println(testArray[i].joinToString(" "))
+    }
+
+    for(i in 0 until result.size) {
+        println(result[i].joinToString(" "))
+    }
+
+    assertTrue(testArray[1][4] == result[4][1])
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
+val matrixRotation = MatrixRotation()
+
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
 Launcher.testProblemSolution("String compression", stringCompressionTest, stringCompression)
+Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotation)
