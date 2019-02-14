@@ -7,6 +7,7 @@ import org.junit.Assert.*
 //INCLUDE StringCompression.kt
 //INCLUDE Solution.kt
 //INCLUDE MatrixRotation.kt
+//INCLUDE ZeroMatrix.kt
 
 class Launcher {
     companion object {
@@ -76,13 +77,39 @@ val matrixRotationTest = { solution: Solution ->
     assertTrue(testArray[1][4] == result[4][1])
 }
 
+val zeroMatrixTest = { solution: Solution ->
+    val size = 10
+    val testArray = Array(size, {
+        Array(size, {
+            size - it - 1
+        })
+    })
+
+    val zeroAction = solution as ZeroMatrix
+
+    val result = zeroAction.execute(testArray)
+
+    for(i in 0 until testArray.size) {
+        println(testArray[i].joinToString(" "))
+    }
+
+    for(i in 0 until result.size) {
+        println(result[i].joinToString(" "))
+    }
+
+    assertTrue(result[9][4] == 0)
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
 val matrixRotation = MatrixRotation()
+val zeroMatrix = ZeroMatrix()
+
 
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
 Launcher.testProblemSolution("String compression", stringCompressionTest, stringCompression)
 Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotation)
+Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
