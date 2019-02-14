@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39d45b6-6657-42a1-a165-bda117807e5b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" beforeDir="false" afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cracking_coding_interview_problems/ZeroMatrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cracking_coding_interview_problems/ZeroMatrix.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,10 +27,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="solution_launcher.kts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="solution_launcher.kts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="1300">
               <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
             </state>
           </provider>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZeroMatrix.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZeroMatrix.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/ZeroMatrix.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="19">
+              <caret line="1" column="91" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -190,8 +190,8 @@
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/OneWay.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/StringCompression.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/MatrixRotation.kt" />
-        <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/ZeroMatrix.kt" />
         <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts" />
+        <option value="$PROJECT_DIR$/src/cracking_coding_interview_problems/ZeroMatrix.kt" />
       </list>
     </option>
   </component>
@@ -787,6 +787,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/MatrixRotation.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -796,15 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/ZeroMatrix.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cracking_coding_interview_problems/solution_launcher.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        <state relative-caret-position="19">
+          <caret line="1" column="91" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
         </state>
       </provider>
     </entry>

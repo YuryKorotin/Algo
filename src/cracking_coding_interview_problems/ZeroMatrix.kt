@@ -1,5 +1,5 @@
 //INCLUDE Solution.kt
-
+//TODO: For space efficiency we can use bit vectors or first column and first row of source
 class ZeroMatrix: Solution {
     fun execute(source: Array<Array<Int>>): Array<Array<Int>>{
         var size = source.size
