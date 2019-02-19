@@ -103,7 +103,7 @@ val zeroMatrixTest = { solution: Solution ->
 
 val stringRotationTest = { solution: Solution ->
 
-    val rotation = solution as StringRotation()
+    val rotation = solution as StringRotation
 
     var firstInput = "waterbottle"
 
@@ -127,4 +127,4 @@ Launcher.testProblemSolution("One way", oneWayTest, oneWay)
 Launcher.testProblemSolution("String compression", stringCompressionTest, stringCompression)
 Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotation)
 Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
-Launcher.testProblemSolution("String rotation", zeroMatrixTest, zeroMatrix)
+Launcher.testProblemSolution("String rotation", stringRotationTest, stringRotation)

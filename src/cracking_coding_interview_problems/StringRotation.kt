@@ -1,7 +1,7 @@
 //INCLUDE Solution.kt
 
 class StringRotation: Solution {
-    fun execute(firstSouce: String, secondSource: String) {
+    fun isSubtring(firstSouce: String, secondSource: String): Boolean {
         return false
     }
 }
