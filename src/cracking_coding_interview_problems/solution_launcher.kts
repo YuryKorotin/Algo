@@ -3,12 +3,14 @@ import org.junit.Assert.*
 
 
 //INCLUDE PalindromePermutationChecker.kt
-//INCLUDE Oneway.kt
+//INCLUDE OneWay.kt
 //INCLUDE StringCompression.kt
 //INCLUDE Solution.kt
 //INCLUDE MatrixRotation.kt
 //INCLUDE ZeroMatrix.kt
 //INCLUDE StringRotation.kt
+//INCLUDE RemoveDups.kt
+//INCLUDE LinkedListNode.kt
 
 class Launcher {
     companion object {
@@ -114,17 +116,28 @@ val stringRotationTest = { solution: Solution ->
     assertTrue(result)
 }
 
+val removeDupsTest = { solution: Solution ->
+
+    val remover = removeDups as RemoveDups
+
+    remover.execute(LinkedListNode(null, 3))
+
+    //TODO: Add builder for linked list
+
+    assertTrue(false)
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
 val matrixRotation = MatrixRotation()
 val zeroMatrix = ZeroMatrix()
 val stringRotation = StringRotation()
-
+val removeDups = RemoveDups()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
 Launcher.testProblemSolution("String compression", stringCompressionTest, stringCompression)
 Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotation)
 Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
-Launcher.testProblemSolution("String rotation", stringRotationTest, stringRotation)
+Launcher.testProblemSolution("Removing duplications", removeDupsTest, removeDups)

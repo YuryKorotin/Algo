@@ -1,0 +1,1 @@
+data class LinkedListNode(var next: LinkedListNode?, var data: Int)
