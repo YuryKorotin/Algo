@@ -12,6 +12,7 @@ import java.util.*
 //INCLUDE StringRotation.kt
 //INCLUDE RemoveDups.kt
 //INCLUDE LinkedListNode.kt
+//INCLUDE KthToLast.kt
 
 class Launcher {
     companion object {
@@ -119,7 +120,7 @@ val stringRotationTest = { solution: Solution ->
 
 val removeDupsTest = { solution: Solution ->
 
-    val remover = removeDups as RemoveDups
+    val remover = solution as RemoveDups
 
     val sourceList = listOf(3, 1, 3, 3, 4)
     val resultList = listOf(4, 3, 1)
@@ -145,6 +146,27 @@ val removeDupsTest = { solution: Solution ->
     assertTrue(i == resultList.size)
 }
 
+
+val kThToLastTest = { solution: Solution ->
+
+    val finder = solution as KthToLast
+
+    val sourceList = listOf(3, 1, 3, 3, 4)
+    val resultList = listOf(4, 3, 1)
+
+    var current: LinkedListNode? = LinkedListNode(null, 3)
+    var newNode: LinkedListNode? = null
+    for (i in 1 until sourceList.size) {
+        newNode = LinkedListNode(current, sourceList[i])
+        current = newNode!!
+    }
+
+    val k = 3
+    val node = finder.find(current, k)
+
+    assertTrue(false)
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
@@ -152,10 +174,11 @@ val matrixRotation = MatrixRotation()
 val zeroMatrix = ZeroMatrix()
 val stringRotation = StringRotation()
 val removeDups = RemoveDups()
+val nodeFinder = KthToLast()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
 Launcher.testProblemSolution("String compression", stringCompressionTest, stringCompression)
 Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotation)
 Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
-Launcher.testProblemSolution("Removing duplications", removeDupsTest, removeDups)
+Launcher.testProblemSolution("Find Kth to Last", kThToLastTest, nodeFinder)
