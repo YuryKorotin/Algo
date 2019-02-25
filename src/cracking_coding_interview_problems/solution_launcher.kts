@@ -1,5 +1,6 @@
 //DEPS junit:junit:4.12
 import org.junit.Assert.*
+import java.util.*
 
 
 //INCLUDE PalindromePermutationChecker.kt
@@ -120,11 +121,28 @@ val removeDupsTest = { solution: Solution ->
 
     val remover = removeDups as RemoveDups
 
-    remover.execute(LinkedListNode(null, 3))
+    val sourceList = listOf(3, 1, 3, 3, 4)
+    val resultList = listOf(4, 3, 1)
 
-    //TODO: Add builder for linked list
+    var current: LinkedListNode? = LinkedListNode(null, 3)
+    var newNode: LinkedListNode? = null
+    for (i in 1 until sourceList.size) {
+        newNode = LinkedListNode(current, sourceList[i])
+        current = newNode!!
+    }
 
-    assertTrue(false)
+    remover.execute(current)
+
+    var i = 0
+    var node = current
+    while(node != null) {
+        assertTrue(node!!.data == resultList[i])
+
+        node = node.next
+        i++
+    }
+
+    assertTrue(i == resultList.size)
 }
 
 var checker = PalindromePermutationChecker()
