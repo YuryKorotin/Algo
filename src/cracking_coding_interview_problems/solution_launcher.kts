@@ -131,7 +131,7 @@ val removeDupsTest = { solution: Solution ->
         current = newNode!!
     }
 
-    remover.execute(current)
+    remover.executeWithoutBuffer(current)
 
     var i = 0
     var node = current

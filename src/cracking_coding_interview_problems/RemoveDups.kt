@@ -17,4 +17,20 @@ class RemoveDups : Solution {
             current = current!!.next
         }
     }
+
+    fun executeWithoutBuffer(node: LinkedListNode?) {
+        var current = node
+        while (current != null) {
+            var changer = current
+            while (changer!!.next != null) {
+                if (changer!!.next!!.data == current!!.data) {
+                    changer!!.next = changer!!.next!!.next
+                } else {
+                    changer = changer.next
+                }
+            }
+            current = current!!.next
+        }
+    }
+
 }
