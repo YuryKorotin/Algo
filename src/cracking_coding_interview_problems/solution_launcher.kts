@@ -151,7 +151,7 @@ val kThToLastTest = { solution: Solution ->
 
     val finder = solution as KthToLast
 
-    val sourceList = listOf(3, 1, 3, 3, 4)
+    val sourceList = listOf(5, 4, 3, 2, 1)
     val resultList = listOf(4, 3, 1)
 
     var current: LinkedListNode? = LinkedListNode(null, 3)
@@ -164,7 +164,8 @@ val kThToLastTest = { solution: Solution ->
     val k = 3
     val node = finder.find(current, k)
 
-    assertTrue(false)
+    println(node!!.data)
+    assertTrue(node!!.data == 3)
 }
 
 var checker = PalindromePermutationChecker()
