@@ -13,6 +13,7 @@ import java.util.*
 //INCLUDE RemoveDups.kt
 //INCLUDE LinkedListNode.kt
 //INCLUDE KthToLast.kt
+//INCLUDE DeleteMiddleNode.kt
 
 class Launcher {
     companion object {
@@ -164,8 +165,27 @@ val kThToLastTest = { solution: Solution ->
     val k = 3
     val node = finder.find(current, k)
 
-    println(node!!.data)
     assertTrue(node!!.data == 3)
+}
+
+val deleteMiddleNodeTest = { solution: Solution ->
+
+    val remover = solution as DeleteMiddleNode
+
+    val sourceList = listOf(5, 4, 3, 2, 1)
+    val resultList = listOf(4, 3, 1)
+
+    var current: LinkedListNode? = LinkedListNode(null, 3)
+    var newNode: LinkedListNode? = null
+
+    for (i in 1 until sourceList.size) {
+        newNode = LinkedListNode(current, sourceList[i])
+        current = newNode!!
+    }
+
+    remover.execute(current)
+
+    assertTrue(false)
 }
 
 var checker = PalindromePermutationChecker()
@@ -176,10 +196,11 @@ val zeroMatrix = ZeroMatrix()
 val stringRotation = StringRotation()
 val removeDups = RemoveDups()
 val nodeFinder = KthToLast()
+var deleteMiddleNode = DeleteMiddleNode()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
 Launcher.testProblemSolution("String compression", stringCompressionTest, stringCompression)
 Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotation)
 Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
-Launcher.testProblemSolution("Find Kth to Last", kThToLastTest, nodeFinder)
+Launcher.testProblemSolution("Delete middle node", deleteMiddleNodeTest, deleteMiddleNode)

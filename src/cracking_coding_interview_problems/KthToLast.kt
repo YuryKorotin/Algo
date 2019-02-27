@@ -22,7 +22,7 @@ class KthToLast : Solution {
         var current = findNode(node.next)
 
         countFromEnd++
-        
+
         if (k == countFromEnd) {
             return node
         }
