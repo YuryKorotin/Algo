@@ -14,6 +14,8 @@ import java.util.*
 //INCLUDE LinkedListNode.kt
 //INCLUDE KthToLast.kt
 //INCLUDE DeleteMiddleNode.kt
+//INCLUDE PartitionOfList.kt
+
 
 class Launcher {
     companion object {
@@ -194,6 +196,32 @@ val deleteMiddleNodeTest = { solution: Solution ->
     }
 }
 
+val partitionOfListTest = { solution: Solution ->
+
+    val partitioner = solution as PartitionOfList
+
+    val sourceList = listOf(3, 5, 8, 5, 10, 2, 1).reversed()
+    val resultList = listOf(3, 1, 2, 10, 5, 5, 8)
+
+    var current: LinkedListNode? = LinkedListNode(null, sourceList[0])
+    var newNode: LinkedListNode? = null
+
+    for (i in 1 until sourceList.size) {
+        newNode = LinkedListNode(current, sourceList[i])
+        current = newNode!!
+    }
+
+    partitioner.execute(current)
+
+    var node = current
+
+    resultList.forEach {
+        assertTrue(it == node!!.data)
+
+        node = node!!.next
+    }
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
@@ -203,6 +231,7 @@ val stringRotation = StringRotation()
 val removeDups = RemoveDups()
 val nodeFinder = KthToLast()
 var deleteMiddleNode = DeleteMiddleNode()
+var partitionOfList = PartitionOfList()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -210,3 +239,4 @@ Launcher.testProblemSolution("String compression", stringCompressionTest, string
 Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotation)
 Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
 Launcher.testProblemSolution("Delete middle node", deleteMiddleNodeTest, deleteMiddleNode)
+Launcher.testProblemSolution("Partition of list", partitionOfListTest, partitionOfList)
