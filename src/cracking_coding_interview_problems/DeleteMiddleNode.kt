@@ -18,12 +18,23 @@ class DeleteMiddleNode : Solution {
 
         exploreNode(node!!.next)
 
-        if (k == sizeCounter / 2 + 1) {
-            node!!.next = node!!.next!!.next
+        if (sizeCounter % 2 == 1 && k == sizeCounter / 2 ||
+                sizeCounter % 2 == 0 && k == sizeCounter / 2) {
+            deleteNode(node)
         }
 
         k++
 
         return node
+    }
+
+    fun deleteNode(node: LinkedListNode?): Boolean {
+        if (node == null || node.next == null) {
+            return false
+        }
+
+        node!!.data = node!!.next!!.data
+        node!!.next = node!!.next!!.next
+        return true
     }
 }
