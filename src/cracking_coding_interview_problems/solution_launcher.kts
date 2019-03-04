@@ -15,6 +15,7 @@ import java.util.*
 //INCLUDE KthToLast.kt
 //INCLUDE DeleteMiddleNode.kt
 //INCLUDE PartitionOfList.kt
+//INCLUDE SumList.kt
 
 
 class Launcher {
@@ -235,6 +236,48 @@ val partitionOfListTest = { solution: Solution ->
     assertTrue(lessIndeces.sorted().last() < greaterIndeces.sorted().first())
 }
 
+val sumListTest = { solution: Solution ->
+
+    val sumMaker = solution as SumList
+
+    val firstNumberList = listOf(7, 1, 6).reversed()
+    val secondNumberList = listOf(5, 9, 2).reversed()
+    val resultList = listOf(2, 1, 9)
+
+
+    var current: LinkedListNode? = LinkedListNode(null, firstNumberList[0])
+    var newNode: LinkedListNode? = null
+
+    for (i in 1 until firstNumberList.size) {
+        newNode = LinkedListNode(current, firstNumberList[i])
+        current = newNode!!
+    }
+
+    val firstNumber = current
+
+    current = LinkedListNode(null, secondNumberList[0])
+    newNode = null
+
+    for (i in 1 until secondNumberList.size) {
+        newNode = LinkedListNode(current, secondNumberList[i])
+        current = newNode!!
+    }
+
+    val secondNumber = current
+
+    var node = sumMaker.execute(firstNumber, secondNumber)
+    var index = 0
+
+    while (node != null) {
+        assertTrue(resultList[index] == node!!.data)
+
+        node = node!!.next
+
+        index++
+    }
+
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
@@ -245,6 +288,7 @@ val removeDups = RemoveDups()
 val nodeFinder = KthToLast()
 var deleteMiddleNode = DeleteMiddleNode()
 var partitionOfList = PartitionOfList()
+var sumList = SumList()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -253,3 +297,4 @@ Launcher.testProblemSolution("Matrix rotation", matrixRotationTest, matrixRotati
 Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
 Launcher.testProblemSolution("Delete middle node", deleteMiddleNodeTest, deleteMiddleNode)
 Launcher.testProblemSolution("Partition of list", partitionOfListTest, partitionOfList)
+Launcher.testProblemSolution("Sum of numbers", sumListTest, sumList)
