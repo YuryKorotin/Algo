@@ -2,9 +2,40 @@
 //INCLUDE LinkedListNode.kt
 
 class SumList : Solution {
-    fun execute(firstNumber: LinkedListNode?, secondNumber: LinkedListNode?) : LinkedListNode? {
-        val result = LinkedListNode(null, 0)
 
-        return result
+    var carry = 0
+    fun execute(firstNumber: LinkedListNode?,
+                secondNumber: LinkedListNode?) : LinkedListNode? {
+        var newNode = sumDigits(firstNumber, secondNumber)
+
+        val head = newNode
+
+        var currentFirst = firstNumber!!.next
+
+        var currentSecond = secondNumber!!.next
+
+        while(currentFirst != null && currentSecond != null) {
+            newNode!!.next = sumDigits(currentFirst, currentSecond)
+
+            newNode = newNode!!.next
+
+            currentFirst = currentFirst!!.next
+
+            currentSecond = currentSecond!!.next
+        }
+
+        return head
+    }
+
+    fun sumDigits(firstDigit: LinkedListNode?,
+                  secondDigit: LinkedListNode?) : LinkedListNode? {
+        
+        val sum = firstDigit!!.data + secondDigit!!.data + carry
+
+        val resultNode = LinkedListNode(null, sum % 10)
+
+        carry = sum / 10
+
+        return resultNode
     }
 }
