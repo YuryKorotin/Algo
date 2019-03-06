@@ -14,6 +14,7 @@ import java.util.*
 //INCLUDE LinkedListNode.kt
 //INCLUDE KthToLast.kt
 //INCLUDE DeleteMiddleNode.kt
+//INCLUDE PalindromeChecker.kt
 //INCLUDE PartitionOfList.kt
 //INCLUDE SumList.kt
 
@@ -275,7 +276,24 @@ val sumListTest = { solution: Solution ->
 
         index++
     }
+    //TODO: Write reversed solution
+}
 
+val palindromeCheckerTest = { solution: Solution ->
+
+    val checker = solution as PalindromeChecker
+
+    val sourceList = listOf(0, 1, 2, 1, 0).reversed()
+
+    var current: LinkedListNode? = LinkedListNode(null, sourceList[0])
+    var newNode: LinkedListNode? = null
+
+    for (i in 1 until sourceList.size) {
+        newNode = LinkedListNode(current, sourceList[i])
+        current = newNode!!
+    }
+
+    assertTrue(checker.isPalindrome(current))
 }
 
 var checker = PalindromePermutationChecker()
@@ -289,6 +307,7 @@ val nodeFinder = KthToLast()
 var deleteMiddleNode = DeleteMiddleNode()
 var partitionOfList = PartitionOfList()
 var sumList = SumList()
+var palindromeChecker = PalindromeChecker()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -298,3 +317,4 @@ Launcher.testProblemSolution("Zero matrix", zeroMatrixTest, zeroMatrix)
 Launcher.testProblemSolution("Delete middle node", deleteMiddleNodeTest, deleteMiddleNode)
 Launcher.testProblemSolution("Partition of list", partitionOfListTest, partitionOfList)
 Launcher.testProblemSolution("Sum of numbers", sumListTest, sumList)
+Launcher.testProblemSolution("Linked list is palindrome", palindromeCheckerTest, palindromeChecker)

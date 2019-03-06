@@ -29,7 +29,7 @@ class SumList : Solution {
 
     fun sumDigits(firstDigit: LinkedListNode?,
                   secondDigit: LinkedListNode?) : LinkedListNode? {
-        
+
         val sum = firstDigit!!.data + secondDigit!!.data + carry
 
         val resultNode = LinkedListNode(null, sum % 10)
