@@ -293,7 +293,7 @@ val palindromeCheckerTest = { solution: Solution ->
         current = newNode!!
     }
 
-    assertTrue(checker.isPalindrome(current))
+    assertTrue(checker.isPalindromeRecursive(current))
 }
 
 var checker = PalindromePermutationChecker()

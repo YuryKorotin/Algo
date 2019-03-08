@@ -25,10 +25,6 @@ class PalindromeChecker : Solution {
         while (slow != null) {
             val top = stack.pop()
 
-            println(top)
-
-            println(slow!!.data)
-
             if (top != slow!!.data) {
                 return false
             }
@@ -36,7 +32,48 @@ class PalindromeChecker : Solution {
         }
         return true
     }
+
+    fun isPalindromeRecurse(head: LinkedListNode?, length: Int): Result {
+	if (head == null || length <= 0) {
+            return Result(head, true)
+	} else if (length == 1) {
+            return Result(head!!.next, true)
+	}
+	
+	val res = isPalindromeRecurse(head!!.next, length - 2)
+
+        if (!res.result || res.node == null) {
+           return res
+	}
+
+	res.result = head!!.data == res.node!!.data
+        
+        res.node = res.node!!.next
+
+	return res
+    }
+
+    fun isPalindromeRecursive(head: LinkedListNode?): Boolean {
+	val length = lengthOfList(head)
+
+	val result = isPalindromeRecurse(head, length)
+	
+	return result.result
+    }
+
+    fun lengthOfList(node: LinkedListNode?): Int {
+	var size = 0
+
+	var current = node
+	while (current != null) {
+	    size++
+	    current = current!!.next
+	}
+	return size
+    }
 }
+
+data class Result(var node: LinkedListNode?, var result: Boolean)
 
 class StackWithList{
     val elements: MutableList<Any> = mutableListOf()
