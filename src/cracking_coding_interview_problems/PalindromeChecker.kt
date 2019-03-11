@@ -34,42 +34,42 @@ class PalindromeChecker : Solution {
     }
 
     fun isPalindromeRecurse(head: LinkedListNode?, length: Int): Result {
-	if (head == null || length <= 0) {
+        if (head == null || length <= 0) {
             return Result(head, true)
-	} else if (length == 1) {
+        } else if (length == 1) {
             return Result(head!!.next, true)
-	}
-	
-	val res = isPalindromeRecurse(head!!.next, length - 2)
+        }
+
+        val res = isPalindromeRecurse(head!!.next, length - 2)
 
         if (!res.result || res.node == null) {
-           return res
-	}
+            return res
+        }
 
-	res.result = head!!.data == res.node!!.data
-        
+        res.result = head!!.data == res.node!!.data
+
         res.node = res.node!!.next
 
-	return res
+        return res
     }
 
     fun isPalindromeRecursive(head: LinkedListNode?): Boolean {
-	val length = lengthOfList(head)
+        val length = lengthOfList(head)
 
-	val result = isPalindromeRecurse(head, length)
-	
-	return result.result
+        val result = isPalindromeRecurse(head, length)
+
+        return result.result
     }
 
     fun lengthOfList(node: LinkedListNode?): Int {
-	var size = 0
+        var size = 0
 
-	var current = node
-	while (current != null) {
-	    size++
-	    current = current!!.next
-	}
-	return size
+        var current = node
+        while (current != null) {
+            size++
+            current = current!!.next
+        }
+        return size
     }
 }
 

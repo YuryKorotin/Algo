@@ -17,7 +17,7 @@ import java.util.*
 //INCLUDE PalindromeChecker.kt
 //INCLUDE PartitionOfList.kt
 //INCLUDE SumList.kt
-
+//INCLUDE IntersectionValidator.kt
 
 class Launcher {
     companion object {
@@ -296,6 +296,44 @@ val palindromeCheckerTest = { solution: Solution ->
     assertTrue(checker.isPalindromeRecursive(current))
 }
 
+val interSectionValidatorTest = { solution: Solution ->
+
+    val validator = solution as IntersectionValidator
+
+    val sourceList = listOf(0, 1, 2, 1, 0).reversed()
+    val secondInput = listOf(3, 3, 2, 4, 4).reversed()
+
+    var current: LinkedListNode? = LinkedListNode(null, sourceList[0])
+    var newNode: LinkedListNode? = null
+
+    var nodeOfIntersection: LinkedListNode? = null
+
+    for (i in 1 until sourceList.size) {
+        newNode = LinkedListNode(current, sourceList[i])
+        current = newNode!!
+
+        if (i == 2) {
+            nodeOfIntersection = current
+        }
+    }
+
+    val firstHead = current
+
+    current = LinkedListNode(null, secondInput[0])
+    newNode = null
+
+    for (i in 1 until secondInput.size) {
+        newNode = LinkedListNode(current, secondInput[i])
+        current = newNode!!
+
+        if (i == 2) {
+            current = nodeOfIntersection
+        }
+    }
+
+    assertTrue(validator.getIntersection(firstHead, current) == nodeOfIntersection)
+}
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
@@ -308,6 +346,7 @@ var deleteMiddleNode = DeleteMiddleNode()
 var partitionOfList = PartitionOfList()
 var sumList = SumList()
 var palindromeChecker = PalindromeChecker()
+var interSectionValidator = IntersectionValidator()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -318,3 +357,5 @@ Launcher.testProblemSolution("Delete middle node", deleteMiddleNodeTest, deleteM
 Launcher.testProblemSolution("Partition of list", partitionOfListTest, partitionOfList)
 Launcher.testProblemSolution("Sum of numbers", sumListTest, sumList)
 Launcher.testProblemSolution("Linked list is palindrome", palindromeCheckerTest, palindromeChecker)
+Launcher.testProblemSolution("Intersection of lists", interSectionValidatorTest, interSectionValidator)
+
