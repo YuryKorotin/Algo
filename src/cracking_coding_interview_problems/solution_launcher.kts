@@ -18,6 +18,7 @@ import java.util.*
 //INCLUDE PartitionOfList.kt
 //INCLUDE SumList.kt
 //INCLUDE IntersectionValidator.kt
+//INCLUDE LoopDetector.kt
 
 class Launcher {
     companion object {
@@ -334,6 +335,32 @@ val interSectionValidatorTest = { solution: Solution ->
     assertTrue(validator.getIntersection(firstHead, current) == nodeOfIntersection)
 }
 
+val loopDetectorTest = { solution: Solution ->
+
+    val detector = solution as LoopDetector
+
+    val sourceList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 11).reversed()
+
+    var current: LinkedListNode? = LinkedListNode(null, sourceList[0])
+    var newNode: LinkedListNode? = null
+
+    var loopStart: LinkedListNode? = null
+    val lastNode = current
+    for (i in 1 until sourceList.size) {
+        newNode = LinkedListNode(current, sourceList[i])
+        current = newNode!!
+
+        if (sourceList[i] == 4) {
+            loopStart = current
+        }
+    }
+	
+    lastNode!!.next = loopStart
+
+    assertTrue(detector.detect(current) == loopStart)
+}
+
+
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
 val stringCompression = StringCompression()
@@ -347,6 +374,7 @@ var partitionOfList = PartitionOfList()
 var sumList = SumList()
 var palindromeChecker = PalindromeChecker()
 var interSectionValidator = IntersectionValidator()
+var loopDetector = LoopDetector()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -358,4 +386,5 @@ Launcher.testProblemSolution("Partition of list", partitionOfListTest, partition
 Launcher.testProblemSolution("Sum of numbers", sumListTest, sumList)
 Launcher.testProblemSolution("Linked list is palindrome", palindromeCheckerTest, palindromeChecker)
 Launcher.testProblemSolution("Intersection of lists", interSectionValidatorTest, interSectionValidator)
+Launcher.testProblemSolution("Find loop start", loopDetectorTest, loopDetector)
 
