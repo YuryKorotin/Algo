@@ -19,27 +19,8 @@ import java.util.*
 //INCLUDE SumList.kt
 //INCLUDE IntersectionValidator.kt
 //INCLUDE LoopDetector.kt
-
-class Launcher {
-    companion object {
-
-        fun measureTime(fileName: String, problemName: String) {
-            println("Start measuring time of problem solution $problemName ...")
-
-            println("End mesuaring time of problem solution $problemName")
-        }
-
-        fun testProblemSolution(problemName: String,
-                                test: (solution: Solution) -> Unit,
-                                solution: Solution) {
-            println("Start testing solution of problem $problemName...")
-
-            test(solution)
-
-            println("End testing solution of problem $problemName")
-        }
-    }
-}
+//INCLUDE Launcher.kt
+//INCLUDE tests/LoopDetectorTest.kt
 
 val palindromeTest = { solution: Solution ->
     val checker = solution as PalindromePermutationChecker
@@ -334,32 +315,6 @@ val interSectionValidatorTest = { solution: Solution ->
 
     assertTrue(validator.getIntersection(firstHead, current) == nodeOfIntersection)
 }
-
-val loopDetectorTest = { solution: Solution ->
-
-    val detector = solution as LoopDetector
-
-    val sourceList = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 11).reversed()
-
-    var current: LinkedListNode? = LinkedListNode(null, sourceList[0])
-    var newNode: LinkedListNode? = null
-
-    var loopStart: LinkedListNode? = null
-    val lastNode = current
-    for (i in 1 until sourceList.size) {
-        newNode = LinkedListNode(current, sourceList[i])
-        current = newNode!!
-
-        if (sourceList[i] == 4) {
-            loopStart = current
-        }
-    }
-	
-    lastNode!!.next = loopStart
-
-    assertTrue(detector.detect(current) == loopStart)
-}
-
 
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
