@@ -1,4 +1,4 @@
-//INCLUDE Solution.kt
+//INCLUDE solutions/Solution.kt
 
 class StringRotation: Solution {
     fun isSubtring(firstSource: String, secondSource: String): Boolean {

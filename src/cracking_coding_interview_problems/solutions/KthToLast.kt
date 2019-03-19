@@ -1,5 +1,5 @@
-//INCLUDE Solution.kt
-//INCLUDE LinkedListNode.kt
+//INCLUDE solutions/Solution.kt
+//INCLUDE solutions/LinkedListNode.kt
 
 class KthToLast : Solution {
     var countFromEnd = 0

@@ -1,4 +1,4 @@
-//INCLUDE Solution.kt
+//INCLUDE solutions/Solution.kt
 
 class MatrixRotation: Solution {
     fun apply(source: Array<Array<Int>>): Array<Array<Int>>{

@@ -1,5 +1,5 @@
-//INCLUDE Solution.kt
-//INCLUDE LoopDetector.kt
+//INCLUDE solutions/Solution.kt
+//INCLUDE solutions/LoopDetector.kt
 
 
 val loopDetectorTest = { solution: Solution ->

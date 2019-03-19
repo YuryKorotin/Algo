@@ -3,22 +3,22 @@ import org.junit.Assert.*
 import java.util.*
 
 
-//INCLUDE PalindromePermutationChecker.kt
-//INCLUDE OneWay.kt
-//INCLUDE StringCompression.kt
-//INCLUDE Solution.kt
-//INCLUDE MatrixRotation.kt
-//INCLUDE ZeroMatrix.kt
-//INCLUDE StringRotation.kt
-//INCLUDE RemoveDups.kt
-//INCLUDE LinkedListNode.kt
-//INCLUDE KthToLast.kt
-//INCLUDE DeleteMiddleNode.kt
-//INCLUDE PalindromeChecker.kt
-//INCLUDE PartitionOfList.kt
-//INCLUDE SumList.kt
-//INCLUDE IntersectionValidator.kt
-//INCLUDE LoopDetector.kt
+//INCLUDE solutions/PalindromePermutationChecker.kt
+//INCLUDE solutions/OneWay.kt
+//INCLUDE solutions/StringCompression.kt
+//INCLUDE solutions/Solution.kt
+//INCLUDE solutions/MatrixRotation.kt
+//INCLUDE solutions/ZeroMatrix.kt
+//INCLUDE solutions/StringRotation.kt
+//INCLUDE solutions/RemoveDups.kt
+//INCLUDE solutions/LinkedListNode.kt
+//INCLUDE solutions/KthToLast.kt
+//INCLUDE solutions/DeleteMiddleNode.kt
+//INCLUDE solutions/PalindromeChecker.kt
+//INCLUDE solutions/PartitionOfList.kt
+//INCLUDE solutions/SumList.kt
+//INCLUDE solutions/IntersectionValidator.kt
+//INCLUDE solutions/LoopDetector.kt
 //INCLUDE Launcher.kt
 //INCLUDE tests/LoopDetectorTest.kt
 

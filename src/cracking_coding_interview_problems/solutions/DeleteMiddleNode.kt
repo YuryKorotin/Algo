@@ -1,5 +1,5 @@
-//INCLUDE Solution.kt
-//INCLUDE LinkedListNode.kt
+//INCLUDE solutions/Solution.kt
+//INCLUDE solutions/LinkedListNode.kt
 
 class DeleteMiddleNode : Solution {
     var sizeCounter = 0

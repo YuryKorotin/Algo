@@ -1,4 +1,4 @@
-//INCLUDE Solution.kt
+//INCLUDE solutions/Solution.kt
 
 class OneWay: Solution {
     fun wasOperationApplied(source: String, result: String) : Boolean {

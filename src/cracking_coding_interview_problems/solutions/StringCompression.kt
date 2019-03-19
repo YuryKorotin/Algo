@@ -1,4 +1,4 @@
-//INCLUDE Solution.kt
+//INCLUDE solutions/Solution.kt
 
 class StringCompression : Solution {
     companion object {
