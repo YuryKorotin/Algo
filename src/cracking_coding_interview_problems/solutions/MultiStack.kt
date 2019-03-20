@@ -1,8 +1,14 @@
 //INCLUDE solutions/Solution.kt
 
-class MultiStack : Solution {
+class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
     lateinit var values: Array<Int>
     lateinit var info: Array<StackInfo>
+
+    init {
+        info = Array(numberOfStacks, {StackInfo(defaultSize * i, defaultSize)})
+        values = Array(numberOfStacks * defaultSize)
+    }
+
 
     fun isEmpty(): Boolean {
         return true
@@ -10,8 +16,8 @@ class MultiStack : Solution {
 
     inner class StackInfo(var start: Int,
                           var size: Int,
-                          var capacity: Int,
-                          val values: Array<Int>) {
+                          var capacity: Int = 0,
+                          val values: Array<Int> = Array(0)) {
         fun isWithinStackCapacity(index: Int): Boolean {
             if (index < 0 || index >= values.size) {
                 return false
