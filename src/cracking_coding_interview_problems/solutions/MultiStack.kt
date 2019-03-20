@@ -52,6 +52,14 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
         return ((index % max) + max) % max
     }
 
+    fun nextIndex(index: Int): Int {
+        return adjustIndex(index + 1)
+    }
+
+    fun prevIndex(index: Int): Int {
+        return adjustIndex(index - 1)
+    }
+
     fun push(stackNumber: Int, element: Int) {
         if (allStacksAreFull()) {
             return
