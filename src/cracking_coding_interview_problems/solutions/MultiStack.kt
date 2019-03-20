@@ -9,11 +9,6 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
         values = Array(numberOfStacks * defaultSize)
     }
 
-
-    fun isEmpty(): Boolean {
-        return true
-    }
-
     inner class StackInfo(var start: Int,
                           var size: Int,
                           var capacity: Int = 0,
@@ -55,5 +50,17 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
         var max = values.size
 
         return ((index % max) + max) % max
+    }
+
+    fun push(stackNumber: Int, element: Int) {
+        if (allStacksAreFull()) {
+            return
+        }
+    }
+
+    
+
+    fun isEmpty(): Boolean {
+        return true
     }
 }
