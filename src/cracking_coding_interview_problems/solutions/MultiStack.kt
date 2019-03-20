@@ -10,9 +10,8 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
     }
 
     inner class StackInfo(var start: Int,
-                          var size: Int,
-                          var capacity: Int = 0,
-                          val values: Array<Int> = Array(1, {0})) {
+                          var capacity: Int,
+                          var size: Int = 0) {
         fun isWithinStackCapacity(index: Int): Boolean {
             if (index < 0 || index >= values.size) {
                 return false
@@ -64,6 +63,55 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
         if (allStacksAreFull()) {
             return
         }
+
+        var stack = info[stackNumber]
+        if (stack.isFull()) {
+            expand(stackNumber)
+        }
+
+        stack.size++
+        values[stack.lastElementIndex()] = element
+    }
+
+    fun pop(stackNumber: Int): Int {
+        val stack = info[stackNumber]
+        if (stack.isEmpty()) {
+            return 0
+        }
+
+        val value = values[stack.lastElementIndex()]
+        values[stack.lastElementIndex()] = 0
+        stack.size--
+        return value
+    }
+
+    fun peek(stackNumber: Int): Int {
+        val stack = info[stackNumber]
+        return values[stack.lastElementIndex()]
+    }
+
+    fun shift(stackNumber: Int) {
+        val stack = info[stackNumber]
+        if (stack.size > stack.capacity) {
+            val nexStack = (stackNumber + 1) % info.size
+            shift(nexStack)
+            stack.capacity++
+        }
+
+        var index = stack.lastCapacityIndex()
+        while (stack.isWithinStackCapacity(index)) {
+            values[index] = values[prevIndex(index)]
+            index = prevIndex(index)
+        }
+
+        values[stack.start] = 0
+        stack.start = nextIndex(stack.start)
+        stack.capacity--
+    }
+
+    fun expand(stackNumber: Int) {
+        shift((stackNumber + 1) % info.size)
+        info[stackNumber].capacity++
     }
 
     fun numberOfElements(): Int {
@@ -77,6 +125,6 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
     }
 
     fun isEmpty(): Boolean {
-        return true
+        return numberOfElements() == 0
     }
 }
