@@ -58,7 +58,9 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
         }
     }
 
-    
+    fun allStacksAreFull() {
+        return numberOfElements() == values.size
+    }
 
     fun isEmpty(): Boolean {
         return true
