@@ -5,14 +5,14 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
     lateinit var info: Array<StackInfo>
 
     init {
-        info = Array(numberOfStacks, {StackInfo(defaultSize * i, defaultSize)})
-        values = Array(numberOfStacks * defaultSize)
+        info = Array(numberOfStacks, { i ->  StackInfo(defaultSize * i, defaultSize)})
+        values = Array(numberOfStacks * defaultSize, {0})
     }
 
     inner class StackInfo(var start: Int,
                           var size: Int,
                           var capacity: Int = 0,
-                          val values: Array<Int> = Array(0)) {
+                          val values: Array<Int> = Array(1, {0})) {
         fun isWithinStackCapacity(index: Int): Boolean {
             if (index < 0 || index >= values.size) {
                 return false
@@ -66,7 +66,13 @@ class MultiStack(val numberOfStacks: Int, val defaultSize: Int) : Solution {
         }
     }
 
-    fun allStacksAreFull() {
+    fun numberOfElements(): Int {
+        var size = 0
+        info.forEach{ infoItem -> size += infoItem.size }
+        return size
+    }
+
+    fun allStacksAreFull(): Boolean {
         return numberOfElements() == values.size
     }
 

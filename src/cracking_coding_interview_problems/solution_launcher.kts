@@ -51,7 +51,7 @@ var sumList = SumList()
 var palindromeChecker = PalindromeChecker()
 var interSectionValidator = IntersectionValidator()
 var loopDetector = LoopDetector()
-var multiStack = MultiStack()
+var multiStack = MultiStack(3, 10)
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
