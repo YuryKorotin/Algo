@@ -4,7 +4,14 @@ val stackMinTest = { solution: Solution ->
 
     stackMin.push(5)
 
-    val min = stackMin.min()
+    var min = stackMin.min()
 
     assertTrue(min == 5)
+
+    stackMin.push(6)
+
+    min = stackMin.min()
+
+    assertTrue(min == 5)
+
 }

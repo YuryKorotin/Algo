@@ -1,21 +1,21 @@
 //INCLUDE solutions/Solution.kt
 
-class StackMin: Solution, Stack<NodeWithMin> {
+class StackMin: Solution, Stack<NodeWithMin>() {
     fun push(element: Int) {
         var newMin = kotlin.math.min(element, min())
         super.push(NodeWithMin(element, newMin))
     }
 
-    fun pop(): Int {
-        return 0
-    }
-
     fun min(): Int {
-        return 0
+        if (isEmpty()) {
+            return Int.MAX_VALUE
+        } else {
+            return peek()!!.min
+        }
     }
 }
 
-class Stack<T>{
+open class Stack<T>{
     val elements: MutableList<T> = mutableListOf()
     fun isEmpty() = elements.isEmpty()
     fun count() = elements.size
