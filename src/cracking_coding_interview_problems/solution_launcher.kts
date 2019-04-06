@@ -20,6 +20,7 @@ import java.util.*
 //INCLUDE solutions/LoopDetector.kt
 //INCLUDE solutions/MultiStack.kt
 //INCLUDE solutions/StackMin.kt
+//INCLUDE solutions/SetOfStacks.kt
 //INCLUDE Launcher.kt
 
 //INCLUDE tests/LoopDetectorTest.kt
@@ -38,6 +39,7 @@ import java.util.*
 //INCLUDE tests/PalindromeTest.kt
 //INCLUDE tests/MultiStackTest.kt
 //INCLUDE tests/StackMinTest.kt
+//INCLUDE tests/SetOfStacksTest.kt
 
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
@@ -55,7 +57,7 @@ var interSectionValidator = IntersectionValidator()
 var loopDetector = LoopDetector()
 var multiStack = MultiStack(3, 10)
 var stackMin = StackMin()
-
+var setOfStacks = SetOfStacks()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -70,6 +72,4 @@ Launcher.testProblemSolution("Intersection of lists", interSectionValidatorTest,
 Launcher.testProblemSolution("Find loop start", loopDetectorTest, loopDetector)
 Launcher.testProblemSolution("Multistack implementation", multiStackTest, multiStack)
 Launcher.testProblemSolution("Stack min implementation", stackMinTest, stackMin)
-
-
-
+Launcher.testProblemSolution("SetOfStacks", setOfStacksTest, setOfStacks)
