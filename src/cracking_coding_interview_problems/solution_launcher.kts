@@ -57,7 +57,7 @@ var interSectionValidator = IntersectionValidator()
 var loopDetector = LoopDetector()
 var multiStack = MultiStack(3, 10)
 var stackMin = StackMin()
-var setOfStacks = SetOfStacks()
+var setOfStacks = SetOfStacks(5)
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
