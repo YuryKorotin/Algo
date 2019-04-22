@@ -23,6 +23,7 @@ import java.util.*
 //INCLUDE solutions/SetOfStacks.kt
 //INCLUDE solutions/QueueOnStack.kt
 //INCLUDE solutions/SortStack.kt
+//INCLUDE solutions/AnimalShelter.kt
 //INCLUDE Launcher.kt
 
 //INCLUDE tests/LoopDetectorTest.kt
@@ -44,6 +45,7 @@ import java.util.*
 //INCLUDE tests/SetOfStacksTest.kt
 //INCLUDE tests/QueueOnStackTest.kt
 //INCLUDE tests/SortStackTest.kt
+//INCLUDE tests/AnimalShelterTest.kt
 
 
 var checker = PalindromePermutationChecker()
@@ -65,6 +67,7 @@ var stackMin = StackMin()
 var setOfStacks = SetOfStacks(5)
 var queueOnStack = QueueOnStack()
 var sortStack = SortStack()
+var animalShelter = AnimalShelter()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -82,3 +85,4 @@ Launcher.testProblemSolution("Stack min implementation", stackMinTest, stackMin)
 Launcher.testProblemSolution("SetOfStacks", setOfStacksTest, setOfStacks)
 Launcher.testProblemSolution("Queue on stack", queueOnStackTest, queueOnStack)
 Launcher.testProblemSolution("Sort stack", sortStackTest, sortStack)
+Launcher.testProblemSolution("Animal shelter", animalShelterTest, animalShelter)
