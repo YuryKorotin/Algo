@@ -24,6 +24,7 @@ import java.util.*
 //INCLUDE solutions/QueueOnStack.kt
 //INCLUDE solutions/SortStack.kt
 //INCLUDE solutions/AnimalShelter.kt
+//INCLUDE solutions/RouteBetween.kt
 //INCLUDE Launcher.kt
 
 //INCLUDE tests/LoopDetectorTest.kt
@@ -46,7 +47,7 @@ import java.util.*
 //INCLUDE tests/QueueOnStackTest.kt
 //INCLUDE tests/SortStackTest.kt
 //INCLUDE tests/AnimalShelterTest.kt
-
+//INCLUDE tests/RouteBetweenTest.kt
 
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
@@ -68,6 +69,7 @@ var setOfStacks = SetOfStacks(5)
 var queueOnStack = QueueOnStack()
 var sortStack = SortStack()
 var animalShelter = AnimalShelter()
+var routeBetween = RouteBetween()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -86,3 +88,4 @@ Launcher.testProblemSolution("SetOfStacks", setOfStacksTest, setOfStacks)
 Launcher.testProblemSolution("Queue on stack", queueOnStackTest, queueOnStack)
 Launcher.testProblemSolution("Sort stack", sortStackTest, sortStack)
 Launcher.testProblemSolution("Animal shelter", animalShelterTest, animalShelter)
+Launcher.testProblemSolution("Route between nodes", routeBetweenTest, routeBetween)
