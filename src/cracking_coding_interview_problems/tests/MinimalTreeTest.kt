@@ -1,7 +1,7 @@
 val minimalTreeTest = { solution: Solution ->
     val minimalTree = solution as MinimalTree
 
-    minimalTree.create()
+    minimalTree.createTree()
 
-    assertTrue(true)
+    assertTrue(false)
 }
