@@ -1,7 +1,7 @@
 val minimalTreeTest = { solution: Solution ->
     val minimalTree = solution as MinimalTree
 
-    val testList = listOf(4, 2, 4, 6, 7, 8)
+    val testList = listOf(4, 2, 4, 6, 7, 8).sorted()
 
     val root = minimalTree.createTree(testList)
 
