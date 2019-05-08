@@ -6,6 +6,18 @@ val minimalTreeTest = { solution: Solution ->
     val root = minimalTree.createTree(testList)
 
     assertTrue(root != null)
-    
+
     assertTrue(root!!.data == 4)
+
+    var current = root
+
+    var depth = 1
+
+    while(current != null) {
+        current = current!!.right
+
+        depth++
+    }
+
+    assertTrue(depth <= 4)
 }
