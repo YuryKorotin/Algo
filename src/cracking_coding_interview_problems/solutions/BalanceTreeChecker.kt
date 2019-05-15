@@ -23,4 +23,34 @@ class BalanceTreeChecker: Solution {
         val height = kotlin.math.max(getHeight(node!!.left), getHeight(node!!.right)) + 1
         return height
     }
+
+    fun optimalGetHeight(node: TreeNode?) : Int {
+        if (node == null) {
+            return -1
+        }
+
+        val leftHeight = optimalGetHeight(node!!.left)
+
+        if (leftHeight == Int.MIN_VALUE) {
+            return Int.MIN_VALUE
+        }
+
+        val rightHeight = optimalGetHeight(node!!.right)
+
+        if (rightHeight == Int.MIN_VALUE) {
+            return Int.MIN_VALUE
+        }
+
+        val heightDifference = leftHeight - rightHeight
+
+        if (kotlin.math.abs(heightDifference) > 1) {
+            return Int.MIN_VALUE
+        } else {
+            return kotlin.math.max(leftHeight, rightHeight) + 1
+        }
+    }
+
+    fun isBalancedOptimal(root: TreeNode?): Boolean {
+        return optimalGetHeight(root) != Int.MIN_VALUE
+    }
 }

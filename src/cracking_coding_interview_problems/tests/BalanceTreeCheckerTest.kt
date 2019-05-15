@@ -11,4 +11,5 @@ val balanceTreeCheckerTest = { solution: Solution ->
     balancedTreeChecker.isBalanced(root)
 
     assertTrue(balancedTreeChecker.isBalanced(root))
+    assertTrue(balancedTreeChecker.isBalancedOptimal(root))
 }
