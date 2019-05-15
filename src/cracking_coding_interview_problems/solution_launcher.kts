@@ -27,6 +27,7 @@ import java.util.*
 //INCLUDE solutions/RouteBetween.kt
 //INCLUDE solutions/MinimalTree.kt
 //INCLUDE solutions/ListOfDepths.kt
+//INCLUDE solutions/BalanceTreeChecker.kt
 //INCLUDE Launcher.kt
 
 //INCLUDE tests/LoopDetectorTest.kt
@@ -53,6 +54,7 @@ import java.util.*
 //INCLUDE tests/RouteBetweenTest.kt
 //INCLUDE tests/MinimalTreeTest.kt
 //INCLUDE tests/ListOfDepthsTest.kt
+//INCLUDE tests/BalanceTreeCheckerTest.kt
 
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
@@ -77,6 +79,7 @@ var animalShelter = AnimalShelter()
 var routeBetween = RouteBetween()
 var minimalTree = MinimalTree()
 var listOfDepths = ListOfDepths()
+var balanceTreeChecker = BalanceTreeChecker()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -98,3 +101,4 @@ Launcher.testProblemSolution("Animal shelter", animalShelterTest, animalShelter)
 Launcher.testProblemSolution("Route between nodes", routeBetweenTest, routeBetween)
 Launcher.testProblemSolution("Minimal sort tree", minimalTreeTest, minimalTree)
 Launcher.testProblemSolution("List of depths", listOfDepthsTest, listOfDepths)
+Launcher.testProblemSolution("Balance tree checker", balanceTreeCheckerTest, balanceTreeChecker)
