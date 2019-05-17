@@ -27,7 +27,11 @@ import java.util.*
 //INCLUDE solutions/RouteBetween.kt
 //INCLUDE solutions/MinimalTree.kt
 //INCLUDE solutions/ListOfDepths.kt
+<<<<<<< HEAD
 //INCLUDE solutions/BstValidator.kt
+=======
+//INCLUDE solutions/BalanceTreeChecker.kt
+>>>>>>> 7fcc34752329ab6976f8db128a34a590bb0a5b9b
 //INCLUDE Launcher.kt
 
 //INCLUDE tests/LoopDetectorTest.kt
@@ -55,6 +59,7 @@ import java.util.*
 //INCLUDE tests/MinimalTreeTest.kt
 //INCLUDE tests/ListOfDepthsTest.kt
 //INCLUDE tests/BstValidatorTest.kt
+//INCLUDE tests/BalanceTreeCheckerTest.kt
 
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
@@ -80,6 +85,7 @@ var routeBetween = RouteBetween()
 var minimalTree = MinimalTree()
 var listOfDepths = ListOfDepths()
 var bstValidator = BstValidator()
+var balanceTreeChecker = BalanceTreeChecker()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -102,3 +108,4 @@ Launcher.testProblemSolution("Route between nodes", routeBetweenTest, routeBetwe
 Launcher.testProblemSolution("Minimal sort tree", minimalTreeTest, minimalTree)
 Launcher.testProblemSolution("List of depths", listOfDepthsTest, listOfDepths)
 Launcher.testProblemSolution("Validate Binary Search Tree", bstValidatorTest, bstValidator)
+Launcher.testProblemSolution("Balance tree checker", balanceTreeCheckerTest, balanceTreeChecker)
