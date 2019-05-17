@@ -27,11 +27,8 @@ import java.util.*
 //INCLUDE solutions/RouteBetween.kt
 //INCLUDE solutions/MinimalTree.kt
 //INCLUDE solutions/ListOfDepths.kt
-<<<<<<< HEAD
 //INCLUDE solutions/BstValidator.kt
-=======
 //INCLUDE solutions/BalanceTreeChecker.kt
->>>>>>> 7fcc34752329ab6976f8db128a34a590bb0a5b9b
 //INCLUDE Launcher.kt
 
 //INCLUDE tests/LoopDetectorTest.kt
