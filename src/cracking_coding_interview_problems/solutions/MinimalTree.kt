@@ -20,4 +20,5 @@ class MinimalTree: Solution {
 
 data class TreeNode(var data: Int = 0,
                     var left: TreeNode? = null,
-                    var right: TreeNode? = null)
+                    var right: TreeNode? = null,
+                    var parent: TreeNode? = null)
