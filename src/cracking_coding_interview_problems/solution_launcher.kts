@@ -30,6 +30,7 @@ import java.util.*
 //INCLUDE solutions/BstValidator.kt
 //INCLUDE solutions/BalanceTreeChecker.kt
 //INCLUDE solutions/SuccessorFinder.kt
+//INCLUDE solutions/BuildOrderResolver.kt
 //INCLUDE Launcher.kt
 
 //INCLUDE tests/LoopDetectorTest.kt
@@ -59,6 +60,7 @@ import java.util.*
 //INCLUDE tests/BstValidatorTest.kt
 //INCLUDE tests/BalanceTreeCheckerTest.kt
 //INCLUDE tests/SuccessorFinderTest.kt
+//INCLUDE tests/BuildOrderResolverTest.kt
 
 var checker = PalindromePermutationChecker()
 val oneWay = OneWay()
@@ -86,6 +88,7 @@ var listOfDepths = ListOfDepths()
 var bstValidator = BstValidator()
 var balanceTreeChecker = BalanceTreeChecker()
 var successorFinder = SuccessorFinder()
+var buildOrderResolver = BuildOrderResolver()
 
 Launcher.testProblemSolution("Palindrom permutation", palindromeTest, checker)
 Launcher.testProblemSolution("One way", oneWayTest, oneWay)
@@ -110,3 +113,4 @@ Launcher.testProblemSolution("List of depths", listOfDepthsTest, listOfDepths)
 Launcher.testProblemSolution("Validate Binary Search Tree", bstValidatorTest, bstValidator)
 Launcher.testProblemSolution("Balance tree checker", balanceTreeCheckerTest, balanceTreeChecker)
 Launcher.testProblemSolution("Successor finder", successorFinderTest, successorFinder)
+Launcher.testProblemSolution("Build older resolver", buildOrderResolverTest, buildOrderResolver)
