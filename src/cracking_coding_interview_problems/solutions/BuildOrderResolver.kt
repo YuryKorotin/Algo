@@ -1,7 +1,11 @@
 class BuildOrderResolver: Solution {
     fun findBuildOrder() : Stack<Project> {
-
+        return Stack()
     }
 }
 
-class Graph() {}
+class BuildGraph() {}
+
+class Project() {
+
+}
