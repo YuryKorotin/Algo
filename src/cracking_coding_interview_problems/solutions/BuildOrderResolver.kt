@@ -45,7 +45,13 @@ class BuildOrderResolver: Solution {
         val graph = BuildGraph()
 
         projects.forEach { project ->
-            graph.createNode(project)
+            graph.getOrCreateNode(project)
+        }
+
+        dependencies.forEach { dependency ->
+            val first = dependency[0]
+            val second = dependency[1]
+            graph.addAge(first, second)
         }
 
         return graph
@@ -62,17 +68,19 @@ class BuildGraph {
             nodes.add(node)
             map.put(name, node)
         }
+
+        return map.get(name)!!
     }
 
     fun addAge(startName: String, endName: String) {
         val start = getOrCreateNode(startName)
         val end = getOrCreateNode(endName)
 
-        start.
+        start.addNeighbor(end)
     }
 }
 
-class Project(val name: String) {
+class Project(open val name: String) {
     val children: MutableList<Project> = mutableListOf()
     var state: ProjectState = ProjectState.BLANK
     val map: MutableMap<String, Project> = mutableMapOf()
@@ -85,6 +93,14 @@ class Project(val name: String) {
 
     fun decrementDependencies() {
         dependencies--
+    }
+
+    fun addNeighbor(node: Project) {
+        if (!map.containsKey(node.name)) {
+            children.add(node)
+            map.put(node.name, node)
+            node.incrementDependencies()
+        }
     }
 }
 
