@@ -42,17 +42,50 @@ class BuildOrderResolver: Solution {
     }
 
     fun buildGraph(projects: List<String>, dependencies: List<List<String>>) : BuildGraph {
-        return BuildGraph()
+        val graph = BuildGraph()
+
+        projects.forEach { project ->
+            graph.createNode(project)
+        }
+
+        return graph
     }
 }
 
 class BuildGraph {
-    var nodes: List<Project> = listOf()
+    var nodes: MutableList<Project> = mutableListOf()
+    var map: MutableMap<String, Project> = mutableMapOf<String, Project>()
+
+    fun getOrCreateNode(name: String) : Project {
+        if (!map.containsKey(name)) {
+            val node: Project = Project(name)
+            nodes.add(node)
+            map.put(name, node)
+        }
+    }
+
+    fun addAge(startName: String, endName: String) {
+        val start = getOrCreateNode(startName)
+        val end = getOrCreateNode(endName)
+
+        start.
+    }
 }
 
-class Project() {
-    val children: List<Project> = listOf()
+class Project(val name: String) {
+    val children: MutableList<Project> = mutableListOf()
     var state: ProjectState = ProjectState.BLANK
+    val map: MutableMap<String, Project> = mutableMapOf()
+
+    var dependencies = 0
+
+    fun incrementDependencies() {
+        dependencies++
+    }
+
+    fun decrementDependencies() {
+        dependencies--
+    }
 }
 
 enum class ProjectState {
