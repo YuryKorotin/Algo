@@ -1,5 +1,5 @@
 val binarySearchTreeSequenceTracerTest = { solution: Solution ->
-	val testResult = listOf(listOf(2, 1, 3), listOf(2, 3, 1))
+	val testResult = mutableListOf(mutableListOf(2, 1, 3), mutableListOf(2, 3, 1))
 
 	val tracer = solution as BinarySearchTreeSequenceTracer
 
