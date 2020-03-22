@@ -1,7 +1,7 @@
 package solution
 
 
-//INCLUDE data_structures/TrieForBits.kt
+//INCLUDE data_structures/XorTrie.kt
 
 class MaxXor {
     fun maxXorSimple(arr: Array<Int>, queries: Array<Int>): Array<Int> {
@@ -26,10 +26,10 @@ class MaxXor {
     fun maxXor(arr: Array<Int>, queries: Array<Int>): Array<Int> {
         val result = Array<Int>(queries.size, {0})
 
-        val trie = TrieForBits()
+        val trie = XorTrie()
 
         arr.forEach{ item ->
-            trie.add(item)
+            trie.insert(item)
         }
 
         val cache = mutableMapOf<Int, Int>()
@@ -40,7 +40,7 @@ class MaxXor {
             if (cache.containsKey(queries[i])) {
                 max = cache.get(queries[i])!!
             } else {
-                max = trie.getMaxXor(queries[i])
+                max = trie.getMaxXor(queries[i], arr)
                 cache.put(queries[i], max)
             }
 

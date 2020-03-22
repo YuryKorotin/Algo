@@ -288,5 +288,5 @@ class Solution{
     }
 }
 
-Solution.solveCrosswordPuzzle()
+Solution.solveMaxXor()
 //Solution.checkSolution("expected.txt")
